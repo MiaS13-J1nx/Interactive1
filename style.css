@@ -16,3 +16,19 @@ body  {
     color: dodgerblue;
     font-family: Trebuchet Ms;
 }
+
+a:link, a:visited {
+    background-color:rgb(53, 127, 255);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 1.0
+}
+
+a:hover, a:active {
+    background-color: red;
+    opacity: 0.5;
+}
+
