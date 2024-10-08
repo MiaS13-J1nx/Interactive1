@@ -8,8 +8,8 @@ body  {
     color: rgb(240, 13, 176);
     font-family: san-serif;
     font-size: 0.9cm;
-    background-color: rgb(235, 235, 235);
-    margin: 100px;
+    /*background-color: rgb(235, 235, 235);*/
+    margin: 1px;
 }
 
 .blue {
