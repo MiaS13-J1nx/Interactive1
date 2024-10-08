@@ -1,0 +1,18 @@
+body  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: linen;
+}
+
+#grape {
+    color: rgb(240, 13, 176);
+    font-family: san-serif;
+    font-size: 0.9cm;
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    margin: 100px;
+}
+
+.blue {
+    color: dodgerblue;
+    font-family: Trebuchet Ms;
+}
