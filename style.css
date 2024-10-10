@@ -11,11 +11,24 @@ body  {
     /*background-color: rgb(235, 235, 235);*/
     margin: 1px;
     border-radius: 25px;
-    background: rgb(223, 131, 131);
+    background: rgb(210, 175, 175);
     padding:20px;
     width:50;
     height:50;
     text-align: left;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.right {
+    background: rgb(167, 185, 167);
+    padding:20px;
+    width:50;
+    height:50;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
 
 }
 
