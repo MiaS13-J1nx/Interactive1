@@ -4,17 +4,15 @@ body  {
     
 }
 
-#left {
-    color: rgb(240, 13, 176);
-    font-family: san-serif;
-    font-size: 0.9cm;
-    /*background-color: rgb(235, 235, 235);*/
-    margin: 1px;
+.left {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
     border-radius: 25px;
-    background: rgb(210, 175, 175);
-    padding:20px;
-    width:20;
-    height:50;
+    background:rgb(236, 203, 216);
+    padding: 20px;
+    width:250px;
+    height:200px;
+    text-align: center;
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -22,8 +20,13 @@ body  {
 }
 
 .right {
-    border-radius: 25px
-    background: rgb(167, 185, 167);
+    color: rgb(240, 13, 176);
+    font-family: san-serif;
+    font-size: 0.9cm;
+    /*background-color: rgb(235, 235, 235);*/
+    margin: 1px;
+    border-radius: 25px;
+    background: rgb(210, 175, 175);
     padding:20px;
     width:20;
     height:50;
