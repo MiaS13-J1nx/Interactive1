@@ -37,16 +37,14 @@ body  {
 
 }
 
-.blue {
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 25px;
-    background:lightsteelblue;
-    padding: 20px;
-    width:300px;
-    height:25px;
-    text-align: center;
-
+header {
+background-color: #3ea2cc;
+color: #fff;
+padding: 10px;
+text-align: center;
+font-family: trebuchet;
+font-size:x-large;
+border-radius: 25px;
 }
 
 a:link, a:visited {
