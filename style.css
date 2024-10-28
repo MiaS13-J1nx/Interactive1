@@ -12,13 +12,10 @@ body  {
     background:rgb(171, 151, 223);
     padding: 20px;
     font-size:smaller;
-
-    text-align: center;
     text-align: left;
     display: flex;
     flex-direction: row;
 
-}
 
 .right {
     color: rgb(240, 13, 176);
@@ -40,11 +37,12 @@ body  {
 header {
 background-color: #5cc3ef;
 color: #fff;
-padding: 11px;
+padding: 50px;
 text-align: center;
 font-family: trebuchet;
-font-size:x-large;
+font-size:xx-large;
 border-radius: 25px;
+
 }
 
 a:link, a:visited {
