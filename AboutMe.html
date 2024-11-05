@@ -107,6 +107,25 @@ section {
    padding: 15px;
 }
 
+/* how to flex desktop/mobile */
+#container {
+            display: flex;
+            flex-direction: row;
+        }
+        @media (orientation: portrait) {
+            #container {
+                flex-direction: column;
+            }
+        }
+
+/* optional */
+        .item {
+            text-align: center;
+            padding: 100px;
+            border-width: 1px;
+            border-style: solid;            
+        }
+
 
 </style>
 <body>
@@ -139,6 +158,7 @@ section {
 
  
 <section id="videoprojects"><b>Video Projects</b></section>
+<div id="container"></div>
 
  <iframe width="400" height="240"
  src="https://youtube.com/embed/BWocDeqbT88">
@@ -154,7 +174,7 @@ section {
 <b><section id=creativewriting> Creative Writing</b></section>
 
 <section style="height:320px">
-<div style="background-color:#8b9ddb; width:31.4%; height:250px; padding-bottom: 0px;" >
+<div style="background-color:#8b9ddb; width:31.4%; height:250px; padding-bottom: 0px;" id="container" >
     <h2>The Reflection</h2>
     <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px;" alt="Official Google Docs news and updates | Google Blog" jsname="kn3ccd" aria-hidden="false">
 
