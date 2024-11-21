@@ -66,6 +66,27 @@ header {
    nav b:hover {
     opacity: 50%;
    }
+   
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 
    div.mycontainer {
       width:60%;
@@ -105,7 +126,12 @@ section {
             padding: 15px;
         }
 
-
+  #doc {
+          background-color:#8b9ddb; 
+          width:32%; 
+          height:250px; 
+          padding-bottom: 0px;"
+}
 /* how to flex desktop/mobile */
 #container {
             display: flex;
@@ -163,7 +189,7 @@ section {
 <section id="videoprojects"><b>Video Projects</b></section>
     <div id="container" style="margin:0 auto">
 
-        <iframe width="400" height="240" style="margin: 0 auto" src="https://youtube.com/embed/BWocDeqbT88"></iframe>
+        <iframe width="400" height="240" style="margin: 0 auto; padding:30px;" src="https://youtube.com/embed/BWocDeqbT88"></iframe>
         <iframe width="400" height="240" style="margin: 0 auto" src="https://youtube.com/embed/tdMnirnVIks"></iframe> 
         <iframe width="400" height="240" style="margin: 0 auto" src="https://youtube.com/embed/eUMF4Jd5RuE"></iframe>
     </div>
@@ -172,6 +198,7 @@ section {
 <section style="height:320px">
 
 
+<!--
     <nav>
         
     
@@ -185,9 +212,10 @@ section {
     </nav>
   
 
-
-<div style="background-color:#8b9ddb; width:32%; height:250px; padding-bottom: 0px;" >
-    <h2>The Reflection</h2>
+<div class="doc" >
+  
+    <h2>The Reflection</h2> 
+    
     <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px;" alt="Official Google Docs news and updates | Google Blog" jsname="kn3ccd" aria-hidden="false">
 
    <p><i>Short Story</i></p>
@@ -200,20 +228,53 @@ section {
    <p><i>Short Story</i></p>
   </div>
 </section>
+-->
+
+<br>
+<br>
+<br>
 
 
 
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;" alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;" alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
+
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;" alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;" alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
 
 
 
 </style>
 
-<body>
 
+
+<!--
 
 <footer> Contact <i>miaschmitt2027@u.northwestern.edu </i> for more details</footer>
-<!--
 -->
 
 
@@ -222,16 +283,3 @@ section {
 </body>
 
 </html> 
-
-
-
-
-
-
-
-
-
-
-
-
-
