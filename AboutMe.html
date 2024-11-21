@@ -67,18 +67,18 @@ header {
     opacity: 50%;
    }
 
-   .mycontainer {
-            width: 80%;
-            overflow: auto;
-            border-radius: 23px;
-            margin: 0 auto; /* Centers the container */
-            text-align: center; /* Centers the content inside */
-            background-color: #122c89;
-            padding: 20px;
-            border-radius: 25px;
-            color: white;
-        }
+   div.mycontainer {
+      width:60%;
+      overflow:auto;
+      border-radius: 23px;
+      margin: 0 auto;
+      color: black;
+      border-radius: 25px;
+      padding: 10px;
+      padding-bottom: 10px;
+      border: 5px solid rgb(24, 104, 144);
 
+         }
 footer {
             text-align: center;
             padding: 30px ;
@@ -88,19 +88,19 @@ footer {
             bottom: 10;
             width: 100%;
         }
-
 section {
+    
   background-color: rgb(54,28,146);
   text-align: center;
-  width: 85%;
+  width: 75%;
   border: 5px solid rgb(9, 23, 58);
   font-family: 'Times New Roman', Times, serif;
   color: #9ebcef;
-  margin: 0px;
+  margin: 0px auto;
   font-size: x-large;
-  background-color: rgb(54, 28, 146);
-  padding: 15px;
-        }
+   background-color: rgb(54, 28, 146);
+   padding: 15px;
+}
 
 /* how to flex desktop/mobile */
 #container {
@@ -139,6 +139,8 @@ section {
       </header>
     
     <br>
+
+     
     <div class="mycontainer" style="background-color:#122c89">
       
       <div style="text-align: center">
@@ -260,6 +262,18 @@ section {
         }
 
         /* Section styles */
+        section {
+            background-color: rgb(54,28,146);
+            text-align: center;
+            width: 95%;
+            border: 5px solid rgb(9, 23, 58);
+            font-family: 'Times New Roman', Times, serif;
+            color: #9ebcef;
+            margin: 15px;
+            font-size: x-large;
+            background-color: rgb(54, 28, 146);
+            padding: 15px;
+        }
 
         /* Media query for mobile devices */
         @media (max-width: 768px) {
