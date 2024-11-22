@@ -1,207 +1,218 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>About Me</title>
-</head> 
+  <title>About Me</title>
+</head>
 
 
 
 <style>
+  header {
 
-header {
-
-            background-color: #00265b;
-            color: #c6c6c6;
-            padding: 5px 0;
-            text-align: center;
-            font-size: larger;
-            font-family: trebuchet;
-            position: fixed;
-            z-index: 1000;
-            width: 100%;
-            top: 0;
-            left: 0;
-
-            
-        }
+    background-color: #00265b;
+    color: #c6c6c6;
+    padding: 5px 0;
+    text-align: center;
+    font-size: larger;
+    font-family: trebuchet;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
 
 
-   body{
-      background-color: rgb(166, 169, 184);
-      padding: 10px;
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-inline: 20px;
-      padding-top: 130px;
+  }
 
-   }
-   p{
-      color: rgb(176, 176, 226);
-      text-align: center;
-      font-family: trebuchet;
-      font-size:x-large;
-      padding: none;
-      
-   }
-   top {
-      font-style: normal;
-      font: 300;
-      font-family: 'Times New Roman', Times, serif;
-      text-underline-position: below;
-      color: rgb(2, 2, 86);
-   }
-    nav a{
-      margin: 0 15px;
-      text-decoration: none;
-      color: #c6c6c6;
-   }
-   nav a:hover {
-      text-decoration: underline;
-      color: #fff;
-   }
 
-   nav b:hover {
+  body {
+    background-color: rgb(166, 169, 184);
+    padding: 10px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-inline: 20px;
+    padding-top: 130px;
+
+  }
+
+  p {
+    color: rgb(176, 176, 226);
+    text-align: center;
+    font-family: trebuchet;
+    font-size: x-large;
+    padding: none;
+
+  }
+
+  top {
+    font-style: normal;
+    font: 300;
+    font-family: 'Times New Roman', Times, serif;
+    text-underline-position: below;
+    color: rgb(2, 2, 86);
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #c6c6c6;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  nav b:hover {
     opacity: 50%;
-   }
-   
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
+  }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
 
-   div.mycontainer {
-      width:60%;
-      overflow:auto;
-      border-radius: 23px;
-      margin: 0 auto;
-      color: black;
-      border-radius: 25px;
-      padding: 10px;
-      padding-bottom: 10px;
-      border: 5px solid rgb(24, 104, 144);
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
 
-         }
-footer {
-            text-align: center;
-            background-color: #0e284d;
-            color: #5e6a9c;
-            position: relative;
-            margin: 0 auto;
-            padding: 30px;
-            bottom: 10;
-            width: 90%;
-        }
+  div.mycontainer {
+    width: 60%;
+    overflow: auto;
+    border-radius: 23px;
+    margin: 0 auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(24, 104, 144);
 
-        /* Section styles */
-section {
-            background-color: rgb(54,28,146);
-            text-align: center;
-            width: 75%;
-            border: 5px solid rgb(9, 23, 58);
-            font-family: 'Times New Roman', Times, serif;
-            color: #9ebcef;
-            margin: 0px auto;
-            margin-bottom: 10px;
-            font-size: x-large;
-            background-color: rgb(54, 28, 146);
-            padding: 15px;
-        }
+  }
+
+  footer {
+    text-align: center;
+    background-color: #0e284d;
+    color: #5e6a9c;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px;
+    bottom: 10;
+    width: 90%;
+  }
+
+  /* Section styles */
+  section {
+    background-color: rgb(54, 28, 146);
+    text-align: center;
+    width: 75%;
+    border: 5px solid rgb(9, 23, 58);
+    font-family: 'Times New Roman', Times, serif;
+    color: #9ebcef;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    font-size: x-large;
+    background-color: rgb(54, 28, 146);
+    padding: 15px;
+  }
 
   #doc {
-          background-color:#8b9ddb; 
-          width:32%; 
-          height:250px; 
-          padding-bottom: 0px;"
-}
-/* how to flex desktop/mobile */
-#container {
-            display: flex;
-            flex-direction: row;
-        }
-        @media (orientation: portrait) {
-            #container {
-                flex-direction: column;
-            }
-        }
+    background-color: #8b9ddb;
+    width: 32%;
+    height: 250px;
+    padding-bottom: 0px;
+    "
 
-/* optional */
-        .item {
-            text-align: center;
-            padding: 100px;
-            border-width: 1px;
-            border-style: solid;            
-        }
+  }
 
+  /* how to flex desktop/mobile */
+  #container {
+    display: flex;
+    flex-direction: row;
+  }
 
+  @media (orientation: portrait) {
+    #container {
+      flex-direction: column;
+    }
+  }
 
+  /* optional */
+  .item {
+    text-align: center;
+    padding: 100px;
+    border-width: 1px;
+    border-style: solid;
+  }
 </style>
+
+
+
 <body>
+  <header>
+    <nav>
+      <a
+        href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
+      <a href="ChicagoChart.html">Chart </a>
+    </nav>
+    <h1>Mia Schmitt</h1>
+    <nav>
+      <a href="#intro" style="font-size: 14px">Introduction</a>
+      <a href="#creativewriting" style="font-size: 14px">Creative Writing</a>
+      <a href="#videoprojects" style="font-size: 14px">Video Projects</a>
+    </nav>
+  </header>
 
-
-   <body>
-      <header>
-        <nav>
-          <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing" >Resume</a>
-          <a href="ChicagoChart.html" >Chart </a>
-      </nav>
-        <h1>Mia Schmitt</h1>
-          <nav>
-              <a href="#intro" style="font-size: 14px">Introduction</a>
-              <a href="#creativewriting" style="font-size: 14px">Creative Writing</a>
-              <a href="#videoprojects" style="font-size: 14px">Video Projects</a>
-          </nav>
-      </header>
-    
-    <br>
-
-     
-    <div class="mycontainer" id="intro" style="background-color:#122c89">
-      
-      <div style="text-align: center" >
-        <img src="headshot.jpg" width="258px" alt="My Headshot" style="border-radius: 150px;">
-      </div>
-
-      <p><b>Hi, I'm Mia </b></p>
-      <p>I'm a Sophomore at Northwestern University studying journalism.
-      My passions are creative writing, video editing, and knitting tiny 
-      hats for cats. You can view two of these passions in this website.</p>
-    </div>
   <br>
 
-  
- 
-<section id="videoprojects"><b>Video Projects</b></section>
-    <div id="container" style="margin:0 auto">
 
-        <iframe width="400" height="240" style="margin: 0 auto; padding:10px; background-color: #122c89;" src="https://youtube.com/embed/BWocDeqbT88"></iframe>
-        <iframe width="400" height="240" style="margin: 0 auto; padding:10px; background-color: #122c89;" src="https://youtube.com/embed/tdMnirnVIks"></iframe> 
-        <iframe width="400" height="240" style="margin: 0 auto; padding:10px; background-color: #122c89;" src="https://youtube.com/embed/eUMF4Jd5RuE"></iframe>
+  <div class="mycontainer" id="intro" style="background-color:#122c89">
+
+    <div style="text-align: center">
+      <img src="headshot.jpg" width="258px" alt="My Headshot" style="border-radius: 150px;">
     </div>
-<b><section id=creativewriting> Creative Writing</b></section>
 
-<section style="height:320px">
+    <p><b>Hi, I'm Mia </b></p>
+    <p>I'm a Sophomore at Northwestern University studying journalism.
+      My passions are creative writing, video editing, and knitting tiny
+      hats for cats. You can view two of these passions in this website.</p>
+  </div>
+  <br>
 
 
-<!--
+
+  <section id="videoprojects"><b>Video Projects</b></section>
+  <div id="container" style="margin:0 auto">
+
+    <iframe width="400" height="240" style="margin: 0 auto; padding:10px; background-color: #122c89;"
+      src="https://youtube.com/embed/BWocDeqbT88"></iframe>
+    <iframe width="400" height="240" style="margin: 0 auto; padding:10px; background-color: #122c89;"
+      src="https://youtube.com/embed/tdMnirnVIks"></iframe>
+    <iframe width="400" height="240" style="margin: 0 auto; padding:10px; background-color: #122c89;"
+      src="https://youtube.com/embed/eUMF4Jd5RuE"></iframe>
+  </div>
+  <b>
+    <section id=creativewriting> Creative Writing
+  </b></section>
+
+  <section style="height:320px; margin: 0 auto;">
+
+
+    <!--
     <nav>
         
     
@@ -233,51 +244,68 @@ section {
 </section>
 -->
 
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
 
 
 
-<div class="gallery">
-  <a target="_blank" href="https://docs.google.com/document/d/11jJBqZuZ0nCcpf1_DtwzgDfro9UhPkmHi-y3WZHZ1GU/edit?usp=sharing">
-    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;" alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
-  </a>
-  <div class="desc">The Reflection </div>
-</div>
+    <div class="gallery">
+      <a target="_blank"
+        href="https://docs.google.com/document/d/11jJBqZuZ0nCcpf1_DtwzgDfro9UhPkmHi-y3WZHZ1GU/edit?usp=sharing">
+        <img
+          src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
+          jsaction="" class="sFlh5c FyHeAf iPVvYb"
+          style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;" alt="Google Doc Logo"
+          jsname="kn3ccd" aria-hidden="false">
+      </a>
+      <div class="desc">The Reflection </div>
+    </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://docs.google.com/document/d/1b_iLJtROuLo125tyT601eel7IosOtvCQMoxC7OY_gj4/edit?usp=sharing">
-    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;" alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
+    <div class="gallery">
+      <a target="_blank"
+        href="https://docs.google.com/document/d/1b_iLJtROuLo125tyT601eel7IosOtvCQMoxC7OY_gj4/edit?usp=sharing">
+        <img
+          src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
+          jsaction="" class="sFlh5c FyHeAf iPVvYb"
+          style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;" alt="Google Doc Logo"
+          jsname="kn3ccd" aria-hidden="false">
 
-  </a>
-  <div class="desc">Not Like Other Girls</div>
-</div>
+      </a>
+      <div class="desc">Not Like Other Girls</div>
+    </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://northbynorthwestern.com/the-other-half/">
-    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px;" alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
-  </a>
-  <div class="desc">The other half</div>
-</div>
+    <div class="gallery">
+      <a target="_blank" href="https://northbynorthwestern.com/the-other-half/">
+        <img
+          src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
+          jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px;"
+          alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
+      </a>
+      <div class="desc">The other half</div>
+    </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://docs.google.com/document/d/1boTyv1dW5cc_yIckYzdXXr1jd52cq0A9O7GQO4woKE8/edit?usp=sharing">
-    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px;" alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
-  </a>
-  <div class="desc">The Enchanting</div>
-</div>
+    <div class="gallery">
+      <a target="_blank"
+        href="https://docs.google.com/document/d/1boTyv1dW5cc_yIckYzdXXr1jd52cq0A9O7GQO4woKE8/edit?usp=sharing">
+        <img
+          src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
+          jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px;"
+          alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
+      </a>
+      <div class="desc">The Enchanting</div>
+    </div>
 
 
 
 
-</style>
+    </style>
 
 
 
-<!--
+    <!--
 
-<footer> Contact <i>miaschmitt2027@u.northwestern.edu </i> for more details</footer>
+<footer> Contact <i>miaschmitt2027atu.northwestern.edu </i> for more details</footer>
 -->
 
 
@@ -285,4 +313,4 @@ section {
 
 </body>
 
-</html> 
+</html>
