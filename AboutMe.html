@@ -135,7 +135,7 @@
     width: 32%;
     height: 250px;
     padding-bottom: 0px;
-    "
+    
 
   }
 
@@ -158,6 +158,45 @@
     border-width: 1px;
     border-style: solid;
   }
+  /* Existing styles remain untouched */
+body {
+    background-color: rgb(166, 169, 184);
+    padding: 10px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-inline: 20px;
+    padding-top: 130px;
+}
+
+.gallery {
+    display: flex;                /* Use flexbox layout */
+    flex-wrap: wrap;              /* Allow items to wrap onto the next line */
+    justify-content: space-between; /* Distribute items evenly */
+    gap: 20px;                    /* Space between items */
+    padding-bottom: 40px;         /* Increase the lower padding of the gallery */
+    margin: 0 auto;               /* Center the gallery container */
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Each item takes up about one-third of the container width */
+    box-sizing: border-box;         /* Ensure padding and margin are included in item width */
+    margin-bottom: 20px;            /* Adds space below each item */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;             /* Optional: round the corners of the images */
+}
+
+/* Existing styles for gallery items and other sections */
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
 </style>
 
 
@@ -172,8 +211,9 @@
     <h1>Mia Schmitt</h1>
     <nav>
       <a href="#intro" style="font-size: 14px">Introduction</a>
-      <a href="#creativewriting" style="font-size: 14px">Creative Writing</a>
       <a href="#videoprojects" style="font-size: 14px">Video Projects</a>
+
+      <a href="#creativewriting" style="font-size: 14px">Creative Writing</a>
     </nav>
   </header>
 
@@ -249,7 +289,7 @@
     <br>
 
 
-
+    
     <div class="gallery">
       <a target="_blank"
         href="https://docs.google.com/document/d/11jJBqZuZ0nCcpf1_DtwzgDfro9UhPkmHi-y3WZHZ1GU/edit?usp=sharing">
@@ -286,7 +326,8 @@
     </div>
 
     <div class="gallery">
-      <a target="_blank" href="https://docs.google.com/document/d/1KPrhp8p1gRHfXUhLeSTHmZodgY_n1_aDuprxh1kkKlk/edit?usp=sharing">
+      <a target="_blank"
+        href="https://docs.google.com/document/d/1FWBInntEG1VoXgNhhKIt0mhu6rPa5KTuJrjQBjbqp2Q/edit?tab=t.0">
         <img
           src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
           jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px;"
@@ -295,9 +336,10 @@
       <div class="desc">Stones</div>
     </div>
 
-    
+
     <div class="gallery">
-      <a target="_blank" href="https://docs.google.com/document/d/19ckIfnjpfVNal9SMnRXVo833iIVqfGAIJbXAArS2tPg/edit?usp=sharing">
+      <a target="_blank"
+        href="https://docs.google.com/document/d/19ckIfnjpfVNal9SMnRXVo833iIVqfGAIJbXAArS2tPg/edit?usp=sharing">
         <img
           src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
           jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 500px; height: 156px; margin: 0px; width: 176px;"
@@ -325,10 +367,8 @@
 
 
 
-    <!--
 
 <footer> Contact <i>miaschmitt2027atu.northwestern.edu </i> for more details</footer>
--->
 
 
 
