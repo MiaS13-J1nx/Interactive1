@@ -43,12 +43,13 @@
 
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 1px 0;
             background-color: #00265b;
-            color: #5e6a9c;
+            color: white;
             position: relative;
             bottom: 0;
             width: 100%;
+ 
         }
 
         p {
@@ -56,6 +57,11 @@
             text-align: center;
             font-family: trebuchet;
             font-size: x-large;
+        }
+
+        p.footer {
+            color:white;
+            font-size: medium;
         }
 
         div.mycontainer div {
@@ -72,37 +78,34 @@
         }
 
         div.graph div {
-            width: 50%;
+            width: 60%;
             margin: 0 auto;
         }
 
-
-
         section {
-            background-color: rgb(88, 79, 215);
+            background-color: rgb(10, 26, 106);
             text-align: center;
             width: 75%;
-            border: 5px solid rgb(4, 31, 100);
-            font-family: 'Times New Roman', Times, serif;
+            border-radius: 30px;
+            color: white;
+            border: 5px solid rgb(65, 91, 156);
+            font-family: 'trebuchet';
             margin: 0px auto;
             margin-bottom: 10px;
-            font-size: x-large;
-            padding: 15px;
+            font-size: large;
+            padding: 30px;
+            line-height: 1.5;
         }
-
 
         .charts {
             display: flex;
             justify-content: space-around;
-            /* To evenly space the charts */
             margin-top: 20px;
             gap: 20px;
-            /* Add gap between the charts */
         }
 
         .charts .flourish-embed {
             width: 45%;
-            /* Adjusted width for side-by-side layout */
         }
     </style>
 </head>
@@ -110,71 +113,56 @@
 <body>
     <header>
         <nav>
-            <a
-                href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
+            <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
             <a href="AboutMe.html">Main Page</a>
         </nav>
         <h1>Chicago Library Attendance</h1>
 
         <nav>
-            <a href="#ChicagoMap" style="font-size: 14px">Map</a>
-            <a href="#ChicagoPie" style="font-size: 14px">Pie Chart</a>
+            <a href="#LineGraph" style="font-size: 14px">Line Graph</a>
+            <a href="#ChicagoMap" style="font-size: 14px">Maps</a>
+            <a href="#Pie" style="font-size: 14px">Pie Chart</a>
+            <a href="#Bar" style="font-size: 14px">Bar Graph</a>
+            <a href="https://docs.google.com/spreadsheets/d/1EeZJaUjQvjHQ5wuycPwcNIFp5pUHaHNbB99zguhX_So/edit?usp=sharing" style="font-size: 14px">Google Sheets</a>
+            <a href="https://data.cityofchicago.org/browse?q=library+visitors&sortBy=relevance&pageSize=20&page=1" style="font-size: 14px">Chicago Data Portal </a>
         </nav>
     </header>
 
-    <section>
-        <p> <b>Total Library Attendance Throughout the Years</b></p>
-        <p>Public libraries are a critical element of free education
-             and community. Technology has made information more accessible,
-             influencing library attendence.
-
-        </p>
+    <section id="LineGraph">
+        <b>Total Library Attendance Throughout the Years</b>
+        Public libraries are a critical element of free education and community. Technology has made information more accessible, influencing library attendance.
     </section>
+
     <div class="graph">
         <div class="flourish-embed flourish-chart" data-src="visualisation/20560105">
-            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
-                    src="https://public.flourish.studio/visualisation/20560105/thumbnail" width="100%"
-                    alt="chart visualization" /></noscript>
-                </div>
-    <div class="mycontainer">
-        <p>Library attendance has gradually declined from 2013-2020 and gradually dropped
-            due to Covid-19. As the pandemic has ended, more people are returning to
-            Chicago public libraries, but in far fewer numbers.
-        </p>
-    </div>
-    </div>
-
-        <div style="background-color:#7484ae; padding-top: 30px;">
-            <section id="ChicagoMap">
-                <p><b>Chicago Public Libraries Maps</b></p>
-
-
-
-                <p>A map of Chicago's 80 divided by zip codes. The darker the section, the more attendees to libraries
-                    in
-                    that zip code. The dots signify the libraries in the zip code. Search up a library to see its
-                    respective attendees.</p>
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20560105/thumbnail" width="100%" alt="chart visualization" /></noscript>
         </div>
-        <br>
-        <div class="mycontainer">
+    </div>
 
+    <div class="mycontainer">
+        <p>Library attendance has gradually declined from 2013-2020 and plummeted due to Covid-19. As the pandemic has ended, more people are returning to Chicago public libraries, but in far fewer numbers.</p>
+    </div>
+
+    <div style="background-color:#7484ae; padding-top: 30px;">
+        <section id="ChicagoMap">
+            <b>Chicago Public Libraries Maps</b><br>
+            A map of Chicago's 80 divided by zip codes. The darker the section, the more attendees to libraries in that zip code. The dots signify the libraries in the zip code. Search up a library to see its respective attendees.
+        </section>
+    </div>
+
+    <div class="mycontainer">
         <div class="flourish-embed flourish-map" data-src="visualisation/20502295">
-            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
-                    src="https://public.flourish.studio/visualisation/20502295/thumbnail" width="100%"
-                    alt="map visualization" /></noscript>
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20502295/thumbnail" width="100%" alt="map visualization" /></noscript>
         </div>
-    <div class="mycontainer">
-        <p><b>2023 Chicago Public Libaries</b></p>
-        <p>Two libraries have been added in the past 10 years: Little Italy (2019) and Water Works (2021).</p>
-    </div>
-    <div class="flourish-embed flourish-map" data-src="visualisation/20502584">
-        <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
-                src="https://public.flourish.studio/visualisation/20502584/thumbnail" width="100%"
-                alt="map visualization" /></noscript>
-    </div>
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <noscript><img src="https://public.flourish.studio/visualisation/20334037/thumbnail" width="90%"
-            alt="map visualization" /></noscript>
+
+        <div class="mycontainer">
+            <p><b>2023 Chicago Public Libraries</b></p>
+            <p>Two libraries have been added in the past 10 years: Little Italy (2019) and Water Works (2021).</p>
+        </div>
+
+        <div class="flourish-embed flourish-map" data-src="visualisation/20502584">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20502584/thumbnail" width="100%" alt="map visualization" /></noscript>
+        </div>
     </div>
 
     <div class="mycontainer">
@@ -183,51 +171,32 @@
 
     <div class="charts">
         <div class="flourish-embed flourish-chart" data-src="visualisation/20559717">
-            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
-                    src="https://public.flourish.studio/visualisation/20559717/thumbnail" width="100%"
-                    alt="2013 pie chart visualization" /></noscript>
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559717/thumbnail" width="100%" alt="2013 pie chart visualization" /></noscript>
         </div>
         <div class="flourish-embed flourish-chart" data-src="visualisation/20559751">
-            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
-                    src="https://public.flourish.studio/visualisation/20559751/thumbnail" width="100%"
-                    alt="2013 bar chart visualization" /></noscript>
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559751/thumbnail" width="100%" alt="2013 bar chart visualization" /></noscript>
         </div>
     </div>
 
     <div class="mycontainer">
         <p><b>2023 Visitors Per Month</b></p>
-        <p>A Donut Chart and Bar Graph of the total number of attendees to Chicago public libraries divided per
-            month.</p>
+        <p>A Donut Chart and Bar Graph of the total number of attendees to Chicago public libraries divided per month.</p>
     </div>
-    <div class="charts" style="background-color:#7484ae;">
-        <div class="flourish-embed flourish-chart" display="flex" alt="Chicago Library Visitors Pie Chart"
-            style="width:100%;" data-src="visualisation/20559624">
+
+    <div class="charts" id="Pie" style="background-color:#7484ae;">
+        <div class="flourish-embed flourish-chart" alt="Chicago Library Visitors Pie Chart" style="width:100%;" data-src="visualisation/20559624">
             <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%"
-                    alt="chart visualization" /></noscript>
+            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%" alt="chart visualization" /></noscript>
         </div>
-        <div class="flourish-embed flourish-chart" display="flex" alt="Chicago Library Visitors bar chart visualization"
-            style="width:100%;" data-src="visualisation/20502752">
+        <div class="flourish-embed flourish-chart" id="Bar" alt="Chicago Library Visitors bar chart visualization" style="width:100%;" data-src="visualisation/20502752">
             <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail"
-                    alt="bar chart visualization" width="100%" /></noscript>
+            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail" alt="bar chart visualization" width="100%" /></noscript>
         </div>
-
-    </div>
     </div>
 
-    <div id="source" class="nav a:hover">
-        <a target="_blank"
-            href="https://docs.google.com/spreadsheets/d/1hkkGS3SdudWLY2FBW-6Y3sCNrfXh3FF1756POQ6E3WQ/edit?usp=sharing">
-            <p>Pivot table and Spreadsheet Data found here</p>
-
-            <a target="_blank"
-                href="https://data.cityofchicago.org/Education/Libraries-2014-Visitors-by-Location/si8n-dg3u/about_data">
-                <p>2014 Data Portal</p>
-    </div>
-
-
-    <footer> Contact <i>miaschmitt2027atu.northwestern.edu </i> for more details</footer>
+    <footer>
+        <p class="footer">Contact miaschmitt2027 at u.northwestern.edu</p>
+    </footer>
 
 </body>
 
