@@ -64,7 +64,7 @@
             color: black;
             border-radius: 25px;
             background: #7f8dc1;
-            padding: 0px;
+            padding: 3px;
             font-size: smaller;
             padding-bottom: 10px;
             border: 5px solid rgb(10, 148, 217);
@@ -72,13 +72,16 @@
 
         .charts {
             display: flex;
-            justify-content: space-around; /* To evenly space the charts */
+            justify-content: space-around;
+            /* To evenly space the charts */
             margin-top: 20px;
-            gap: 20px; /* Add gap between the charts */
+            gap: 20px;
+            /* Add gap between the charts */
         }
 
         .charts .flourish-embed {
-            width: 45%; /* Adjusted width for side-by-side layout */
+            width: 45%;
+            /* Adjusted width for side-by-side layout */
         }
     </style>
 </head>
@@ -86,7 +89,8 @@
 <body>
     <header>
         <nav>
-            <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
+            <a
+                href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
             <a href="AboutMe.html">Main Page</a>
         </nav>
         <h1>2014 Chicago Library Attendance</h1>
@@ -97,47 +101,85 @@
         </nav>
     </header>
 
+    <div class="mycontainer">
+        <p> <b>Total Library Attendance Throughout the Years</b></p>
+        <p>Little Italy (2019) Water Works (2021)</p>
+    </div>
+    <div class="mycontainer" style="padding-top: 30px;">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20560105"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20560105/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+    </div>
+
     <div class="mycontainer" style="background-color:#7484ae;" height="5vh">
         <div style="background-color:#7484ae; padding-top: 30px;">
             <section id="ChicagoMap">
-                <p><b>2014 Chicago Public Libraries</b></p>
-                <p>A map of Chicago divided by zip codes. The darker the section, the more attendees to libraries in
+                <p><b>2013 Chicago Public Libraries</b></p>
+                <p>A map of Chicago's 80 divided by zip codes. The darker the section, the more attendees to libraries in
                     that zip code. The dots signify the libraries in the zip code. Search up a library to see its
                     respective attendees.</p>
         </div>
         <br>
 
-        <div class="flourish-embed flourish-map" data-src="visualisation/20334037" alt="Chicago Public Library Map">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript><img src="https://public.flourish.studio/visualisation/20334037/thumbnail" width="90%" alt="map visualization" /></noscript>
+        <div class="flourish-embed flourish-map" data-src="visualisation/20502295">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
+                    src="https://public.flourish.studio/visualisation/20502295/thumbnail" width="100%"
+                    alt="map visualization" /></noscript>
         </div>
+
         <div class="mycontainer">
-            <p><b>2014 Visitors Per Month</b></p>
-            <p>A Donut Chart and Bar Graph of the total number of attendees to Chicago public libraries divided per
-                month.</p>
+            <p><b>2023 Chicago Public Libaries</b></p>
+            <p>Two  libraries have been added in the past 10 years: Little Italy (2019) and Water Works (2021).</p>
         </div>
-        <div class="charts" style="background-color:#7484ae;">
-            <div class="flourish-embed flourish-chart" display="flex" alt="Chicago Library Visitors Pie Chart" style="width:100%;"
-                data-src="visualisation/20336274">
-                <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
-                        src="https://public.flourish.studio/visualisation/20336274/thumbnail"
-                        alt="pie chart visualization" /></noscript>
-            </div>
-            <div class="flourish-embed flourish-chart" display="flex" alt="Chicago Library Visitors Bar Graph" style="width:100%;"
-                data-src="visualisation/20336419">
-                <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
-                        src="https://public.flourish.studio/visualisation/20336419/thumbnail"
-                        alt="bar chart visualization" /></noscript>
-            </div>
+        <div class="flourish-embed flourish-map" data-src="visualisation/20502584">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
+                    src="https://public.flourish.studio/visualisation/20502584/thumbnail" width="100%"
+                    alt="map visualization" /></noscript>
         </div>
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <noscript><img src="https://public.flourish.studio/visualisation/20334037/thumbnail" width="90%"
+                alt="map visualization" /></noscript>
+    </div>
+
+<div class="mycontainer">
+    <p><b>2013 Visitors Per Month</b></p>
+</div>
+
+<div class="charts">
+    <div class="flourish-embed flourish-chart" data-src="visualisation/20559717"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559717/thumbnail" width="100%" alt="2013 pie chart visualization" /></noscript></div>
+    <div class="flourish-embed flourish-chart" data-src="visualisation/20559751"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559751/thumbnail" width="100%" alt="2013 bar chart visualization" /></noscript></div>
+</div>
+
+    <div class="mycontainer">
+        <p><b>2023 Visitors Per Month</b></p>
+        <p>A Donut Chart and Bar Graph of the total number of attendees to Chicago public libraries divided per
+            month.</p>
+    </div>
+    <div class="charts" style="background-color:#7484ae;">
+        <div class="flourish-embed flourish-chart" display="flex" alt="Chicago Library Visitors Pie Chart"
+            style="width:100%;" data-src="visualisation/20559624">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%"
+                    alt="chart visualization" /></noscript>
+        </div>
+        <div class="flourish-embed flourish-chart" display="flex" alt="Chicago Library Visitors bar chart visualization"
+            style="width:100%;" data-src="visualisation/20502752">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail"
+                    alt="bar chart visualization" width="100%" /></noscript>
+        </div>
+
+    </div>
     </div>
 
     <div id="source" class="nav a:hover">
         <a target="_blank"
-        href="https://docs.google.com/spreadsheets/d/1hkkGS3SdudWLY2FBW-6Y3sCNrfXh3FF1756POQ6E3WQ/edit?usp=sharing">
-        <p>Pivot table and Spreadsheet Data found here</p>
-      </div>
-  
+            href="https://docs.google.com/spreadsheets/d/1hkkGS3SdudWLY2FBW-6Y3sCNrfXh3FF1756POQ6E3WQ/edit?usp=sharing">
+            <p>Pivot table and Spreadsheet Data found here</p>
+
+            <a target="_blank"
+                href="https://data.cityofchicago.org/Education/Libraries-2014-Visitors-by-Location/si8n-dg3u/about_data">
+                <p>2014 Data Portal</p>
+    </div>
+
 
     <footer> Contact <i>miaschmitt2027atu.northwestern.edu </i> for more details</footer>
 
