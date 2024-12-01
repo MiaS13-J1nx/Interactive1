@@ -66,7 +66,7 @@
 
         div.mycontainer div {
             width: 75%;
-            margin: 0 auto;
+            margin: 40px auto;
             text-align: center;
             color: black;
             border-radius: 25px;
@@ -121,15 +121,14 @@
         <nav>
             <a href="#LineGraph" style="font-size: 14px">Line Graph</a>
             <a href="#ChicagoMap" style="font-size: 14px">Maps</a>
-            <a href="#Pie" style="font-size: 14px">Pie Chart</a>
-            <a href="#Bar" style="font-size: 14px">Bar Graph</a>
+            <a href="#Pie" style="font-size: 14px">2013 vs 2023 Attendance</a>
             <a href="https://docs.google.com/spreadsheets/d/1EeZJaUjQvjHQ5wuycPwcNIFp5pUHaHNbB99zguhX_So/edit?usp=sharing" style="font-size: 14px">Google Sheets</a>
             <a href="https://data.cityofchicago.org/browse?q=library+visitors&sortBy=relevance&pageSize=20&page=1" style="font-size: 14px">Chicago Data Portal </a>
         </nav>
     </header>
 
     <section id="LineGraph">
-        <b>Total Library Attendance Throughout the Years</b>
+        <b>Total Library Attendance Throughout the Years</b> <br>
         Public libraries are a critical element of free education and community. Technology has made information more accessible, influencing library attendance.
     </section>
 
@@ -140,14 +139,29 @@
     </div>
 
     <div class="mycontainer">
+        <div>
         <p>Library attendance has gradually declined from 2013-2020 and plummeted due to Covid-19. As the pandemic has ended, more people are returning to Chicago public libraries, but in far fewer numbers.</p>
+    </div> 
     </div>
 
-    <div style="background-color:#7484ae; padding-top: 30px;">
+    <div style="background-color:#7484ae;">
         <section id="ChicagoMap">
             <b>Chicago Public Libraries Maps</b><br>
-            A map of Chicago's 80 divided by zip codes. The darker the section, the more attendees to libraries in that zip code. The dots signify the libraries in the zip code. Search up a library to see its respective attendees.
+            These maps show the distribution of library attendees in 
+            Chicago in the years 2013 and 2023. The darker
+             the section, the more attendees to libraries in that zip code.
+              The dots signify the location of the individual libraries
+               Search up a 
+              library to see how many visitors it had in that year.
+            
         </section>
+    </div>
+
+    <div class="mycontainer"> 
+        <div style="padding-top: 20px;">
+        <p><b>2013 Chicago Public Libraries</b><br><br> A map of Chicago's 80 libraries divided by zip codes.</p>
+        <p>The zip code 60605 overwhelmingly has the most visitors. This is because of the historic Harold Washington Library, which garners the most visitors.</p>
+    </div>
     </div>
 
     <div class="mycontainer">
@@ -158,12 +172,14 @@
         <div class="mycontainer">
             <p><b>2023 Chicago Public Libraries</b></p>
             <p>Two libraries have been added in the past 10 years: Little Italy (2019) and Water Works (2021).</p>
-        </div>
+        <p>Harold Washington Library still has the most visitors. However, there is a more even distribution of library visitors across Chicago compared to 2013.</p> </div>
 
         <div class="flourish-embed flourish-map" data-src="visualisation/20502584">
             <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20502584/thumbnail" width="100%" alt="map visualization" /></noscript>
         </div>
     </div>
+
+    <section>Though the attendance of libraries has evened out in Chicago, it is important to remember that every library has seen a drop of attendance. Below is a side-by-side comparison of monthly visitors in 2013 and 2023</section>
 
     <div class="mycontainer">
         <p><b>2013 Visitors Per Month</b></p>
