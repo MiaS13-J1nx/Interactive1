@@ -3,6 +3,9 @@
 
 <head>
     <title>Library Chart</title>
+    <!-- Meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
         header {
             background-color: #00265b;
@@ -27,7 +30,7 @@
             padding-right: 10px;
             padding-inline: 20px;
             padding-top: 130px;
-            width: 75%;
+            width: 75%; /* Default width for desktop */
         }
 
         nav a {
@@ -49,7 +52,6 @@
             position: relative;
             bottom: 0;
             width: 100%;
- 
         }
 
         p {
@@ -106,6 +108,22 @@
 
         .charts .flourish-embed {
             width: 45%;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            body {
+                width: 100%; /* 100% width on mobile */
+            }
+            .charts .flourish-embed {
+                width: 100%; /* Full width for charts on mobile */
+            }
+            .mycontainer div {
+                width: 100%; /* 100% width for containers on mobile */
+            }
+            section {
+                width: 100%; /* Full width for sections on mobile */
+            }
         }
     </style>
 </head>
@@ -182,7 +200,11 @@
     <section>Though the attendance of libraries has evened out in Chicago, it is important to remember that every library has seen a drop of attendance. Below is a side-by-side comparison of monthly visitors in 2013 and 2023</section>
 
     <div class="mycontainer">
+        <div>
         <p><b>2013 Visitors Per Month</b></p>
+        <p>A Donut Chart and Bar Graph of the total number of attendees to Chicago public libraries divided per month.</p>
+        <p> July is the most popular month with 966,000 visitors.</p>
+    </div>
     </div>
 
     <div class="charts">
@@ -195,8 +217,10 @@
     </div>
 
     <div class="mycontainer">
+        <div>
         <p><b>2023 Visitors Per Month</b></p>
-        <p>A Donut Chart and Bar Graph of the total number of attendees to Chicago public libraries divided per month.</p>
+        <p></p>
+    </div>
     </div>
 
     <div class="charts" id="Pie" style="background-color:#7484ae;">
