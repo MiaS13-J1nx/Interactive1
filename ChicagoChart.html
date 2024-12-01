@@ -21,12 +21,13 @@
         body {
             background-color: #7484ae;
             padding: 10px;
-            margin: 0;
+            margin: 0 auto;
             font-family: Arial, Helvetica, sans-serif;
             padding-left: 10px;
             padding-right: 10px;
             padding-inline: 20px;
             padding-top: 130px;
+            width: 75%;
         }
 
         nav a {
@@ -70,6 +71,25 @@
             border: 5px solid rgb(10, 148, 217);
         }
 
+        div.graph div {
+            width: 50%;
+        }
+
+
+
+        section {
+            background-color: rgb(88, 79, 215);
+            text-align: center;
+            width: 75%;
+            border: 5px solid rgb(4, 31, 100);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px auto;
+            margin-bottom: 10px;
+            font-size: x-large;
+            padding: 15px;
+        }
+
+
         .charts {
             display: flex;
             justify-content: space-around;
@@ -93,7 +113,7 @@
                 href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
             <a href="AboutMe.html">Main Page</a>
         </nav>
-        <h1>2014 Chicago Library Attendance</h1>
+        <h1>Chicago Library Attendance</h1>
 
         <nav>
             <a href="#ChicagoMap" style="font-size: 14px">Map</a>
@@ -101,47 +121,76 @@
         </nav>
     </header>
 
-    <div class="mycontainer">
+    <section>
         <p> <b>Total Library Attendance Throughout the Years</b></p>
-        <p>Little Italy (2019) Water Works (2021)</p>
+        <p>Public libraries are a critical element of free education
+             and community. Technology has made information more accessible,
+             influencing library attendence.
+
+        </p>
+    </section>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20560105">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
+                    src="https://public.flourish.studio/visualisation/20560105/thumbnail" width="100%"
+                    alt="chart visualization" /></noscript>
+        
+    <div class="mycontainer">
+        <p>Library attendance has gradually declined from 2013-2020 and gradually dropped
+            due to Covid-19. As the pandemic has ended, more people are returning to
+            Chicago public libraries, but in far fewer numbers.
+        </p>
     </div>
-    <div class="mycontainer" style="padding-top: 30px;">
-        <div class="flourish-embed flourish-chart" data-src="visualisation/20560105"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20560105/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
     </div>
 
-    <div class="mycontainer" style="background-color:#7484ae;" height="5vh">
         <div style="background-color:#7484ae; padding-top: 30px;">
             <section id="ChicagoMap">
-                <p><b>2013 Chicago Public Libraries</b></p>
-                <p>A map of Chicago's 80 divided by zip codes. The darker the section, the more attendees to libraries in
+                <p><b>Chicago Public Libraries Maps</b></p>
+
+
+
+                <p>A map of Chicago's 80 divided by zip codes. The darker the section, the more attendees to libraries
+                    in
                     that zip code. The dots signify the libraries in the zip code. Search up a library to see its
                     respective attendees.</p>
         </div>
         <br>
-        <div class="flourish-embed flourish-map" data-src="visualisation/20502295"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20502295/thumbnail" width="100%" alt="map visualization" /></noscript></div>        </div>
-
         <div class="mycontainer">
-            <p><b>2023 Chicago Public Libaries</b></p>
-            <p>Two  libraries have been added in the past 10 years: Little Italy (2019) and Water Works (2021).</p>
-        </div>
-        <div class="flourish-embed flourish-map" data-src="visualisation/20502584">
+
+        <div class="flourish-embed flourish-map" data-src="visualisation/20502295">
             <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
-                    src="https://public.flourish.studio/visualisation/20502584/thumbnail" width="100%"
+                    src="https://public.flourish.studio/visualisation/20502295/thumbnail" width="100%"
                     alt="map visualization" /></noscript>
         </div>
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-        <noscript><img src="https://public.flourish.studio/visualisation/20334037/thumbnail" width="90%"
+    <div class="mycontainer">
+        <p><b>2023 Chicago Public Libaries</b></p>
+        <p>Two libraries have been added in the past 10 years: Little Italy (2019) and Water Works (2021).</p>
+    </div>
+    <div class="flourish-embed flourish-map" data-src="visualisation/20502584">
+        <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
+                src="https://public.flourish.studio/visualisation/20502584/thumbnail" width="100%"
                 alt="map visualization" /></noscript>
     </div>
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript><img src="https://public.flourish.studio/visualisation/20334037/thumbnail" width="90%"
+            alt="map visualization" /></noscript>
+    </div>
 
-<div class="mycontainer">
-    <p><b>2013 Visitors Per Month</b></p>
-</div>
+    <div class="mycontainer">
+        <p><b>2013 Visitors Per Month</b></p>
+    </div>
 
-<div class="charts">
-    <div class="flourish-embed flourish-chart" data-src="visualisation/20559717"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559717/thumbnail" width="100%" alt="2013 pie chart visualization" /></noscript></div>
-    <div class="flourish-embed flourish-chart" data-src="visualisation/20559751"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559751/thumbnail" width="100%" alt="2013 bar chart visualization" /></noscript></div>
-</div>
+    <div class="charts">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20559717">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
+                    src="https://public.flourish.studio/visualisation/20559717/thumbnail" width="100%"
+                    alt="2013 pie chart visualization" /></noscript>
+        </div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20559751">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
+                    src="https://public.flourish.studio/visualisation/20559751/thumbnail" width="100%"
+                    alt="2013 bar chart visualization" /></noscript>
+        </div>
+    </div>
 
     <div class="mycontainer">
         <p><b>2023 Visitors Per Month</b></p>
