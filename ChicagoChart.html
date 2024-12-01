@@ -3,9 +3,6 @@
 
 <head>
     <title>Library Chart</title>
-    <!-- Meta tag for responsive design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <style>
         header {
             background-color: #00265b;
@@ -30,7 +27,7 @@
             padding-right: 10px;
             padding-inline: 20px;
             padding-top: 130px;
-            width: 75%; /* Default width for desktop */
+            width: 75%;
         }
 
         nav a {
@@ -99,6 +96,7 @@
             line-height: 1.5;
         }
 
+        /* For larger screens */
         .charts {
             display: flex;
             justify-content: space-around;
@@ -106,25 +104,27 @@
             gap: 20px;
         }
 
-        .charts .flourish-embed {
-            width: 45%;
-        }
-
-        /* Mobile styles */
+        /* For mobile screens, stack charts vertically */
         @media (max-width: 768px) {
             body {
-                width: 100%; /* 100% width on mobile */
+                width: 100%; /* Full width on mobile */
             }
+
+            .charts {
+                display: block; /* Stack elements vertically */
+                gap: 0; /* Remove the gap between charts */
+            }
+
             .charts .flourish-embed {
-                width: 100%; /* Full width for charts on mobile */
+                width: 100%; /* Make charts full width on mobile */
+                margin-bottom: 20px; /* Add some space between stacked charts */
             }
+
             .mycontainer div {
                 width: 100%; /* 100% width for containers on mobile */
             }
-            section {
-                width: 50%; /* Full width for sections on mobile */
-            }
         }
+
     </style>
 </head>
 
@@ -217,27 +217,24 @@
     </div>
 
     <div class="mycontainer">
-        <div>
-        <p><b>2023 Visitors Per Month</b></p>
-        <p></p>
-    </div>
+        <p><b>2023 Library Visitors</b></p>
+        <p>The pie chart shows the attendance per month in 2023.</p>
     </div>
 
     <div class="charts" id="Pie" style="background-color:#7484ae;">
         <div class="flourish-embed flourish-chart" alt="Chicago Library Visitors Pie Chart" style="width:100%;" data-src="visualisation/20559624">
             <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%" alt="chart visualization" /></noscript>
+            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%" alt="2023 pie chart visualization" /></noscript>
         </div>
         <div class="flourish-embed flourish-chart" id="Bar" alt="Chicago Library Visitors bar chart visualization" style="width:100%;" data-src="visualisation/20502752">
             <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail" alt="bar chart visualization" width="100%" /></noscript>
+            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail" alt="2023 bar chart visualization" width="100%" /></noscript>
         </div>
     </div>
 
     <footer>
-        <p class="footer">Contact miaschmitt2027 at u.northwestern.edu</p>
+        <p class="footer">Contact the email from the resume for more info</p>
     </footer>
-
 </body>
 
 </html>
