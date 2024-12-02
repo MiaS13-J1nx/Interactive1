@@ -7,11 +7,8 @@
     <link rel="icon" type="image/x-icon" href="headshot.jpg">
 </head>
 
-
-
 <style>
     header {
-
         background-color: #00265b;
         color: #c6c6c6;
         padding: 5px 0;
@@ -23,11 +20,7 @@
         width: 100%;
         top: 0;
         left: 0;
-
-
-
     }
-
 
     body {
         background-color: rgb(166, 169, 184);
@@ -38,7 +31,6 @@
         padding-right: 10px;
         padding-inline: 20px;
         padding-top: 130px;
-
     }
 
     p {
@@ -47,7 +39,6 @@
         font-family: trebuchet;
         font-size: x-large;
         padding: none;
-
     }
 
     top {
@@ -103,9 +94,7 @@
         border-radius: 25px;
         padding: 35px;
         border: 5px solid rgb(24, 104, 144);
-
     }
-
 
     footer {
         text-align: center;
@@ -116,7 +105,6 @@
         bottom: 0;
         width: 100%;
     }
-
 
     section {
         background-color: rgb(54, 28, 146);
@@ -132,132 +120,106 @@
         padding: 15px;
     }
 
+    /* Flexbox layout for the container */
     #container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
-    justify-content: space-around;
-}
+        display: flex;
+        flex-direction: row; /* Default to row (side-by-side) */
+        flex-wrap: wrap;     /* Allow items to wrap into multiple rows if necessary */
+        justify-content: space-around; /* Optional: this will space the items evenly */
+    }
 
-@media (max-width: 768px) {
-    #container {
-        flex-direction: column;  /* Stack items on mobile */
-
-/* optional */
-        .item {
-            text-align: center;
-            padding: 20px;
-            border-width: 0px;       
+    @media (max-width: 768px) {
+        #container {
+            flex-direction: column;  /* Stack items vertically on small screens */
         }
-    </style>
-</head>
+    }
 
-
+    /* Optional: Styling for individual flex items */
+    .item {
+        text-align: center;
+        padding: 20px;
+        border-width: 0px;
+    }
+</style>
 
 <body>
     <header>
         <nav>
-            <a
-                href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
+            <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
             <a href="AboutMe.html">Main Page </a>
             <a href="ChicagoChart.html">Chart </a>
         </nav>
         <h1>Mia Schmitt</h1>
-        <nav>
     </header>
-
 
     <div style="text-align: center">
         <img src="MeSmile.jpg" width="258px" alt="Me with pink hair" style="border-radius: 150px;">
     </div>
 
     <section style="margin:40px auto">Creative Writing</section>
-    <div class="mycontainer"
-        style="margin: 20px auto; font-family: trebuchet; font-size: x-large; background-color: #00265b; color:#c6c6c6; ">
+    <div class="mycontainer" style="margin: 20px auto; font-family: trebuchet; font-size: x-large; background-color: #00265b; color:#c6c6c6; ">
         <br>
-        I have been writing short stories since fifth grade and have written over 1.5 million words across dozens of
-        stories. These are some of my more recent works, which I have presented in my Creative Writing Classes.
+        I have been writing short stories since fifth grade and have written over 1.5 million words across dozens of stories. These are some of my more recent works, which I have presented in my Creative Writing Classes.
     </div>
 
-    <div id="container" >
+    <div id="container">
         <div class="item">
-        <div class="gallery"
-            style="margin: 0 auto; padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
-            <a target="_blank"
-                href="https://docs.google.com/document/d/11jJBqZuZ0nCcpf1_DtwzgDfro9UhPkmHi-y3WZHZ1GU/edit?usp=sharing">
-                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
-                    jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
-                    style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;"
-                    alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
-            </a>
-            <div class="desc">The Reflection </div>
+            <div class="gallery" style="margin: 0 auto; padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
+                <a target="_blank" href="https://docs.google.com/document/d/11jJBqZuZ0nCcpf1_DtwzgDfro9UhPkmHi-y3WZHZ1GU/edit?usp=sharing">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
+                         jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
+                         style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;">
+                </a>
+                <div class="desc">The Reflection </div>
+            </div>
         </div>
 
-        <div class="gallery"
-            style="padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
-            <a target="_blank"
-                href="https://docs.google.com/document/d/1b_iLJtROuLo125tyT601eel7IosOtvCQMoxC7OY_gj4/edit?usp=sharing">
-                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
-                    jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
-                    style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;"
-                    alt="Google Doc Logo" jsname="kn3ccd" aria-hidden="false">
-
-            </a>
-            <div class="desc">Not Like Other Girls</div>
+        <div class="item">
+            <div class="gallery" style="padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
+                <a target="_blank" href="https://docs.google.com/document/d/1b_iLJtROuLo125tyT601eel7IosOtvCQMoxC7OY_gj4/edit?usp=sharing">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
+                         jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
+                         style="max-width: 500px; height: 156px; margin: 0px; width: 176px; margin: 0 auto;">
+                </a>
+                <div class="desc">Not Like Other Girls</div>
+            </div>
         </div>
 
-        <div class="gallery"
-            style="padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
-            <a target="_blank" href="https://northbynorthwestern.com/the-other-half/">
-                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
-                    jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
-                    style="max-width: 500px; height: 156px; margin: 0px; width: 176px;" alt="Google Doc Logo"
-                    jsname="kn3ccd" aria-hidden="false">
-            </a>
-            <div class="desc">The other half</div>
+        <div class="item">
+            <div class="gallery" style="padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
+                <a target="_blank" href="https://northbynorthwestern.com/the-other-half/">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
+                         jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
+                         style="max-width: 500px; height: 156px; margin: 0px; width: 176px;">
+                </a>
+                <div class="desc">The other half</div>
+            </div>
         </div>
 
-        <div class="gallery"
-            style="padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
-            <a target="_blank"
-                href="https://docs.google.com/document/d/1FWBInntEG1VoXgNhhKIt0mhu6rPa5KTuJrjQBjbqp2Q/edit?tab=t.0">
-                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
-                    jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
-                    style="max-width: 500px; height: 156px; margin: 0px; width: 176px;" alt="Google Doc Logo"
-                    jsname="kn3ccd" aria-hidden="false">
-            </a>
-            <div class="desc">Stones</div>
+        <div class="item">
+            <div class="gallery" style="padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
+                <a target="_blank" href="https://docs.google.com/document/d/1FWBInntEG1VoXgNhhKIt0mhu6rPa5KTuJrjQBjbqp2Q/edit?tab=t.0">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
+                         jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
+                         style="max-width: 500px; height: 156px; margin: 0px; width: 176px;">
+                </a>
+                <div class="desc">Stones</div>
+            </div>
         </div>
 
-
-        <div class="gallery"
-            style="padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
-            <a target="_blank"
-                href="https://docs.google.com/document/d/19ckIfnjpfVNal9SMnRXVo833iIVqfGAIJbXAArS2tPg/edit?usp=sharing">
-                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
-                    jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
-                    style="max-width: 500px; height: 156px; margin: 0px; width: 176px;" alt="Google Doc Logo"
-                    jsname="kn3ccd" aria-hidden="false">
-            </a>
-            <div class="desc">Poetry</div>
-        </div>
-
-
-        <div class="gallery"
-            style="padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
-            <a target="_blank"
-                href="https://docs.google.com/document/d/1boTyv1dW5cc_yIckYzdXXr1jd52cq0A9O7GQO4woKE8/edit?usp=sharing">
-                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
-                    jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
-                    style="max-width: 500px; height: 156px; margin: 0px; width: 176px;" alt="Google Doc Logo"
-                    jsname="kn3ccd" aria-hidden="false">
-            </a>
-            <div class="desc">The Enchanting</div>
+        <div class="item">
+            <div class="gallery" style="padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
+                <a target="_blank" href="https://docs.google.com/document/d/1RjSg3rzWaeuGGcDBMhwV8HjRiQdNcnZ_v3fo8h-y9J8/edit?usp=sharing">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp"
+                         jsaction="" alt="Google Docs Logo" class="sFlh5c FyHeAf iPVvYb"
+                         style="max-width: 500px; height: 156px; margin: 0px; width: 176px;">
+                </a>
+                <div class="desc">Choices</div>
+            </div>
         </div>
     </div>
-    </div>
 
-
+    <footer>Website designed by Mia Schmitt &copy; 2024</footer>
 </body>
 
 </html>
