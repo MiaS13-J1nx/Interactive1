@@ -132,17 +132,26 @@
         padding: 15px;
     }
 
-    div.container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    @media (orientation: portrait) {
+/* how to flex desktop/mobile */
         #container {
-            flex-direction: column;
+            display: flex;
+            flex-direction: row;
         }
-    }
-</style>
+        @media (orientation: portrait) {
+            #container {
+                flex-direction: column;
+            }
+        }
+
+/* optional */
+        .item {
+            text-align: center;
+            padding: 20px;
+            border-width: 0px;       
+        }
+    </style>
+</head>
+
 
 
 <body>
@@ -170,7 +179,8 @@
         stories. These are some of my more recent works, which I have presented in my Creative Writing Classes.
     </div>
 
-    <div class="container" >
+    <div id="container" >
+        <div class="item">
         <div class="gallery"
             style="margin: 0 auto; padding-top: 20px; color: rgb(177, 177, 228); background-color: rgb(42, 43, 87); border-radius: 20px; border-width: 5px">
             <a target="_blank"
@@ -244,6 +254,7 @@
             </a>
             <div class="desc">The Enchanting</div>
         </div>
+    </div>
     </div>
 
 
