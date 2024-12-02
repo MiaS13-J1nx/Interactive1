@@ -100,32 +100,41 @@
             line-height: 1.5;
         }
 
-        .charts {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
-    margin-top: 20px;
-    gap: 20px;
-}
+
+.charts {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .charts .flourish-embed {
+            width: 45%;
+        }
 
 .charts .flourish-embed {
     width: 48%; 
 }
 
-        @media (max-width: 768px) {
-            body {
-                width: 100%; 
-            }
-            .charts .flourish-embed {
-                width: 100%; 
-            }
-            .mycontainer div {
-                width: 100%;
-            }
-            section {
-                width: ; 
-            }
-        }
+@media (max-width: 768px) {
+    body {
+        padding-top: 130px; /* Reduced space for small screens */
+    }
+    .charts .flourish-embed {
+        width: 100%; /* Full width for small screens */
+    }
+    section {
+        width: 95%; /* Increased width for small screens */
+        font-size: 1rem; /* Adjusted font size */
+    }
+    nav a {
+        font-size: 12px; /* Smaller font size for nav links */
+    }
+    p {
+        font-size: 1rem; /* Smaller font size for paragraph text */
+    }
+}
+
         
     </style>
 </head>
