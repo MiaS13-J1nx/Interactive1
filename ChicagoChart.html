@@ -3,6 +3,8 @@
 
 <head>
     <title>Library Chart</title>
+    <link rel="icon" type="image/x-icon" href="headshot.jpg">
+    
     <style>
         header {
             background-color: #00265b;
@@ -27,7 +29,7 @@
             padding-right: 10px;
             padding-inline: 20px;
             padding-top: 130px;
-            width: 75%;
+            width: 75%; /* Default width for desktop */
         }
 
         nav a {
@@ -91,12 +93,11 @@
             font-family: 'trebuchet';
             margin: 0px auto;
             margin-bottom: 10px;
-            font-size: large;
+            font-size: x-large;
             padding: 30px;
             line-height: 1.5;
         }
 
-        /* For larger screens */
         .charts {
             display: flex;
             justify-content: space-around;
@@ -104,27 +105,25 @@
             gap: 20px;
         }
 
-        /* For mobile screens, stack charts vertically */
+        .charts .flourish-embed {
+            width: 45%;
+        }
+
+        /* Mobile styles */
         @media (max-width: 768px) {
             body {
-                width: 100%; /* Full width on mobile */
+                width: 100%; /* 100% width on mobile */
             }
-
-            .charts {
-                display: block; /* Stack elements vertically */
-                gap: 0; /* Remove the gap between charts */
-            }
-
             .charts .flourish-embed {
-                width: 100%; /* Make charts full width on mobile */
-                margin-bottom: 20px; /* Add some space between stacked charts */
+                width: 100%; /* Full width for charts on mobile */
             }
-
             .mycontainer div {
                 width: 100%; /* 100% width for containers on mobile */
             }
+            section {
+                width: 50%; /* Full width for sections on mobile */
+            }
         }
-
     </style>
 </head>
 
@@ -133,6 +132,7 @@
         <nav>
             <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
             <a href="AboutMe.html">Main Page</a>
+            <a href="CreativeWriting.html">Creative Writing </a>
         </nav>
         <h1>Chicago Library Attendance</h1>
 
@@ -217,24 +217,51 @@
     </div>
 
     <div class="mycontainer">
-        <p><b>2023 Library Visitors</b></p>
-        <p>The pie chart shows the attendance per month in 2023.</p>
+        <div>
+        <p><b>2023 Visitors Per Month</b></p>
+        <p></p>
+    </div>
     </div>
 
     <div class="charts" id="Pie" style="background-color:#7484ae;">
         <div class="flourish-embed flourish-chart" alt="Chicago Library Visitors Pie Chart" style="width:100%;" data-src="visualisation/20559624">
             <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%" alt="2023 pie chart visualization" /></noscript>
+            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%" alt="chart visualization" /></noscript>
         </div>
         <div class="flourish-embed flourish-chart" id="Bar" alt="Chicago Library Visitors bar chart visualization" style="width:100%;" data-src="visualisation/20502752">
             <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail" alt="2023 bar chart visualization" width="100%" /></noscript>
+            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail" alt="bar chart visualization" width="100%" /></noscript>
         </div>
     </div>
 
+    <div class="mycontainer">
+        <div><b><p>What this shows</b></p>
+        <p>Library visitorship as plummetted due to the pandemic and better tecnhology. However, there is also a more even disributions of library visitor numbers across zip codes and months, implying the remaining visitors are dedicated to the libraries.</p></div>
+    </div>
+
+    <section><b>How I found this data</b>
+    <br> I went to the Chicago Data Portal and compiled ten years of library visitor numbers into one google sheets. The google sheets and Chicago Data Portal are linked in the navigation bar.</section>
+    <div class="mycontainer">
+        
+        <div><b><p>Line Graph</p></b><p>I calculated the sum of all the libraries total visitorship and inputted it into a Flourish line graph.</p></div>
+
+    </div>
+    <div class="mycontainer">
+        
+        <div><b><p>Map</p></b><p>I created a pivot table for the years 2013 and 2023 to find the number of visitors per zip code. I then searched for all the latitude and longitude coordinates for the library addresses and inputted them into the Flourish set.</p></div>
+
+    </div>
+
+    <div class="mycontainer">
+        
+        <div><b><p>Bar Chart and Bar Graph</p></b><p>I calculated the sum of each respective month and made a chart for the total visitors per month of the years 2013 and 2023. I then inputted the data into Flourish</p></div>
+
+    </div>
+
     <footer>
-        <p class="footer">Contact the email from the resume for more info</p>
+        <p class="footer">Contact miaschmitt2027 at u.northwestern.edu</p>
     </footer>
+
 </body>
 
 </html>
