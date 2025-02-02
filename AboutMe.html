@@ -228,7 +228,211 @@
 </section>
     </div>
       -->
+    
+<style>
+  header {
+      background-color: #00265b;
+      color: #c6c6c6;
+      padding: 5px 0;
+      text-align: center;
+      font-size: larger;
+      font-family: trebuchet;
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+      top: 0;
+      left: 0;
+  }
 
+  body {
+      background-color: rgb(166, 169, 184);
+      padding: 10px;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-inline: 20px;
+      padding-top: 130px;
+  }
+
+  p {
+      color: rgb(176, 176, 226);
+      text-align: center;
+      font-family: trebuchet;
+      font-size: x-large;
+  }
+
+  nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #c6c6c6;
+  }
+
+  nav a:hover {
+      text-decoration: underline;
+      color: #fff;
+  }
+
+  footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #00265b;
+      color: #5e6a9c;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+
+  section {
+      background-color: rgb(54, 28, 146);
+      text-align: center;
+      width: 75%;
+      border: 5px solid rgb(9, 23, 58);
+      font-family: 'Times New Roman', Times, serif;
+      color: #9ebcef;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      font-size: x-large;
+      padding: 15px;
+  }
+
+  #container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+  }
+
+  .item {
+      flex: 1 1 200px;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .gallery {
+      background-color: rgb(42, 43, 87);
+      color: rgb(177, 177, 228);
+      border-radius: 20px;
+      border-width: 5px;
+      padding-top: 20px;
+      text-align: center;
+      border: 5px solid rgb(42, 43, 87); 
+      transition: border-color 0.3s ease;
+  }
+
+  .gallery img {
+      width: 100%;
+      max-width: 176px;
+      height: auto;
+  }
+
+  .desc {
+      padding: 15px;
+      text-align: center;
+  }
+
+  .gallery:hover {
+      border-color: #3284e0; 
+  }
+
+  @media (max-width: 768px) {
+      body {
+          padding-top: 120px;
+      }
+
+      #container {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      nav a {
+          margin: 5px 0;
+      }
+  }
+</style>
+
+
+      <header>
+        <nav>
+            <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
+            <a href="AboutMe.html">Main Page</a>
+            <a href="ChicagoChart.html">Chart</a>
+        </nav>
+        <h1>Mia Schmitt</h1>
+    </header>
+
+    <div style="text-align: center">
+        <img src="MeSmile.jpg" width="258px" alt="Me with pink hair" style="border-radius: 150px;">
+    </div>
+
+    <section>Creative Writing</section>
+    <div id="writing" style="margin: 20px auto; font-family: trebuchet; font-size: x-large; width: 70%; background-color: #618dcc; color:#142045; padding: 30px; border: 5px solid rgb(16, 83, 216); border-radius: 30px; border-width: 4px; text-align: center;">
+        I have been writing short stories since fifth grade and have written over 1.5 million words across dozens of stories. These are some of my more recent works, which I have presented in my creative writing classes.
+    </div>
+
+    <div id="container">
+        <div class="item">
+            <div class="gallery">
+                <a target="_blank" href="https://docs.google.com/document/d/11jJBqZuZ0nCcpf1_DtwzgDfro9UhPkmHi-y3WZHZ1GU/edit?usp=sharing">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+                </a>
+                <div class="desc">The Reflection</div>
+            </div>
+        </div>
+        <!-- I used the gallery format from w3 schools. The gallerys were very finnicky and often would overlap other sections. They took a long time to fix.  -->
+
+        <div class="item">
+            <div class="gallery">
+                <a target="_blank" href="https://docs.google.com/document/d/1b_iLJtROuLo125tyT601eel7IosOtvCQMoxC7OY_gj4/edit?usp=sharing">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+                </a>
+                <div class="desc">Not Like Other Girls</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="gallery">
+                <a target="_blank" href="https://northbynorthwestern.com/the-other-half/">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+                </a>
+                <div class="desc">The Other Half</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="gallery">
+                <a target="_blank" href="https://docs.google.com/document/d/1FWBInntEG1VoXgNhhKIt0mhu6rPa5KTuJrjQBjbqp2Q/edit?tab=t.0">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+                </a>
+                <div class="desc">Stones</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="gallery">
+                <a target="_blank" href="https://docs.google.com/document/d/19ckIfnjpfVNal9SMnRXVo833iIVqfGAIJbXAArS2tPg/edit?usp=sharing">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+                </a>
+                <div class="desc">Poetry</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="gallery">
+                <a target="_blank" href="https://docs.google.com/document/d/1boTyv1dW5cc_yIckYzdXXr1jd52cq0A9O7GQO4woKE8/edit?usp=sharing">
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+                </a>
+                <div class="desc">The Enchanting</div>
+            </div>
+        </div>
+    </div>
+     
 
     <div class="section" id="ai disclaimer">
       <section>
