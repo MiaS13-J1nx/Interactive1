@@ -2,201 +2,285 @@
 <html>
 
 <head>
-  <title>Mia S Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="headshot.jpg">
-  <style>
+    <title>Library Chart</title>
+    <link rel="icon" type="image/x-icon" href="headshot.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <style>
+        header {
+            background-color: #00265b;
+            color: #c6c6c6;
+            padding: 5px 0;
+            text-align: center;
+            font-size: larger;
+            font-family: trebuchet;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        body {
+            background-color: #7484ae;
+            padding: 10px;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-inline: 20px;
+            padding-top: 130px;
+            width: 75%; 
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #c6c6c6;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1px 0;
+            background-color: #00265b;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        p {
+            color: rgb(1, 1, 112);
+            text-align: center;
+            font-family: trebuchet;
+            font-size: x-large;
+        }
+
+        p.footer {
+            color:white;
+            font-size: medium;
+        }
+
+        div.mycontainer div {
+            width: 75%;
+            margin: 40px auto;
+            text-align: center;
+            color: black;
+            border-radius: 25px;
+            background: #7f8dc1;
+            padding: 3px;
+            font-size: smaller;
+            padding-bottom: 10px;
+            border: 5px solid rgb(10, 148, 217);
+        }
+
+        div.graph div {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: rgb(10, 26, 106);
+            text-align: center;
+            width: 75%;
+            border-radius: 30px;
+            color: white;
+            border: 5px solid rgb(65, 91, 156);
+            font-family: 'trebuchet';
+            margin: 0px auto;
+            margin-bottom: 10px;
+            font-size: x-large;
+            padding: 30px;
+            line-height: 1.5;
+        }
+
+        .charts {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+
+
+.charts .flourish-embed {
+    width: 48%; 
+}
+
+@media (max-width: 768px) {
     body {
-      background-color: rgb(166, 169, 184);
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      padding: 130px 20px 10px;
+        padding-top: 130px; 
     }
-
-    header, footer {
-      background-color: #00265b;
-      color: #c6c6c6;
-      text-align: center;
-      padding: 5px 0;
-      width: 100%;
-      left: 0;
-      z-index: 1000;
+    .charts .flourish-embed {
+        width: 100%; 
     }
-
-    header {
-      top: 0;
-      position: fixed;
-    }
-
-    footer {
-      bottom: 0;
-      color: #5e6a9c;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #c6c6c6;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-      color: #fff;
-    }
-
-    p {
-      color: rgb(176, 176, 226);
-      text-align: center;
-      font-family: trebuchet;
-      font-size: x-large;
-    }
-
-    .mycontainer, section {
-      width: 60%;
-      margin: 20px auto;
-      padding: 15px;
-      border: 5px solid rgb(24, 104, 144);
-      background-color: #122c89;
-      border-radius: 25px;
-      color: black;
-    }
-
     section {
-      background-color: rgb(54, 28, 146);
-      border-color: rgb(9, 23, 58);
-      font-family: 'Times New Roman', Times, serif;
-      color: #9ebcef;
-      font-size: x-large;
+        width: 95%;
+        font-size: 1rem; 
+    }
+    nav a {
+        font-size: 12px;
+    }
+    p {
+        font-size: 1rem; 
+    }
     }
 
-    #container, #gallery-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 20px;
-    }
 
-    .gallery {
-      margin: 5px;
-      border: 1px solid #ccc;
-      width: 180px;
-      text-align: center;
-      transition: border-color 0.3s ease;
-    }
-
-    .gallery:hover {
-      border-color: #1078e0;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-    }
-
-    .desc {
-      padding: 15px;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding-top: 120px;
-      }
-
-      #container, #gallery-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav a {
-        margin: 5px 0;
-      }
-
-      .mycontainer, section {
-        width: 90%;
-      }
-
-      .gallery {
-        width: 100%;
-      }
-    }
-  </style>
+        
+    </style>
 </head>
-
+<!-- I used the same style for all of my web pages. I used chat gpt to help with mobile formatting  -->
 <body>
-  <header>
-    <nav>
-      <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
-      <a href="ChicagoChart.html">Chicago Library Attendance Project</a>
-    </nav>
-    <h1>Mia Schmitt</h1>
-    <nav>
-      <a href="#intro" style="font-size: 14px">Introduction</a>
-      <a href="#videoprojects" style="font-size: 14px">Video Projects</a>
-      <a href="#creativewriting" style="font-size: 14px">Creative Writing</a>
-      <a href="#ai disclaimer" style="font-size: 14px">AI Disclaimer</a>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
+            <a href="AboutMe.html">Main Page</a>
+   <!--         <a href="CreativeWriting.html">Creative Writing </a>-->
+        </nav>
+        <h1>Chicago Library Attendance</h1>
 
-  <div class="mycontainer" id="intro">
-    <div style="text-align: center">
-      <img src="headshot1.jpg" width="258px" alt="My Headshot" style="border-radius: 150px;">
-    </div>
-    <p><b>Hi, I'm Mia</b></p>
-    <p>I'm a Sophomore at Northwestern University studying journalism, business, marketing, and creative writing. My passions are writing novels, video editing, and accounting. I hope to work for The Daily Herald in the future in either video editing or management. This website will show you some of my creative projects and data analysis.</p>
-  </div>
+        <nav>
+            <a href="#LineGraph" style="font-size: 14px">Line Graph</a>
+            <a href="#ChicagoMap" style="font-size: 14px">Maps</a>
+            <a href="#Pie" style="font-size: 14px">2013 vs 2023 Attendance</a>
+            <a href="https://docs.google.com/spreadsheets/d/1EeZJaUjQvjHQ5wuycPwcNIFp5pUHaHNbB99zguhX_So/edit?usp=sharing" style="font-size: 14px">Google Sheets</a>
+            <a href="https://data.cityofchicago.org/browse?q=library+visitors&sortBy=relevance&pageSize=20&page=1" style="font-size: 14px">Chicago Data Portal </a>
+            <a href="#HowTo" style="font-size: 14px">HowTo</a>
+        </nav>
+    </header>
 
-  <section id="videoprojects"><b>Video Projects</b></section>
-  <div id="container">
-    <iframe width="400" height="240" alt="ProfileVideo" src="https://youtube.com/embed/BWocDeqbT88"></iframe>
-    <iframe width="400" height="240" alt="NU Nights" src="https://youtube.com/embed/tdMnirnVIks"></iframe>
-    <iframe width="400" height="240" alt="Killer Queen Music Video" src="https://youtube.com/embed/eUMF4Jd5RuE"></iframe>
-  </div>
+    <section id="LineGraph">
+        <b>Total Library Attendance Throughout the Years</b> <br>
+        Public libraries are a critical element of free education and community. Technology has made information more accessible, influencing library attendance.
+    </section>
 
-  <section id="creativewriting"><b>Creative Writing</b></section>
-  <div id="gallery-container">
-    <div class="gallery">
-      <a target="_blank" href="https://docs.google.com/document/d/11jJBqZuZ0nCcpf1_DtwzgDfro9UhPkmHi-y3WZHZ1GU/edit?usp=sharing">
-        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
-      </a>
-      <div class="desc">The Reflection</div>
+    <div class="mycontainer">
+        <div><p>As a bookworm from the Chicago suburbs, I've spent my childhood in my local public library. This webpage will explore how library visitor habits have shifted throughout the years.</p></div>
     </div>
-    <div class="gallery">
-      <a target="_blank" href="https://docs.google.com/document/d/1b_iLJtROuLo125tyT601eel7IosOtvCQMoxC7OY_gj4/edit?usp=sharing">
-        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
-      </a>
-      <div class="desc">Not Like Other Girls</div>
-    </div>
-    <div class="gallery">
-      <a target="_blank" href="https://northbynorthwestern.com/the-other-half/">
-        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
-      </a>
-      <div class="desc">The Other Half</div>
-    </div>
-    <div class="gallery">
-      <a target="_blank" href="https://docs.google.com/document/d/19ckIfnjpfVNal9SMnRXVo833iIVqfGAIJbXAArS2tPg/edit?usp=sharing">
-        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
-      </a>
-      <div class="desc">Poetry</div>
-    </div>
-    <div class="gallery">
-      <a target="_blank" href="https://docs.google.com/document/d/1boTyv1dW5cc_yIckYzdXXr1jd52cq0A9O7GQO4woKE8/edit?usp=sharing">
-        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
-      </a>
-      <div class="desc">The Enchanting</div>
-    </div>
-  </div>
 
-  <section id="ai disclaimer"><b>AI Disclaimer</b></section>
-  <div class="mycontainer">
-    <p>AI was used in this project to help with the formatting. For example, I learned how to change the color of the creative writing borders with the hover effect using AI. I also used AI to make this website mobile friendly.</p>
-  </div>
+    <div class="graph">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20560105">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20560105/thumbnail" width="100%" alt="chart visualization" /></noscript>
+        </div>
+    </div>
 
-  <footer><i>Website designed by Mia Schmitt &copy; 2025</i></footer>
+    <!-- I've kept the graphs all the same font and color. I used Flourish for all of my graphs. -->
+
+    <div class="mycontainer">
+        <div>
+        <p>Library attendance has gradually declined from 2013-2020 and plummeted due to Covid-19. As the pandemic has ended, more people are returning to Chicago public libraries, but in far fewer numbers.</p>
+    </div> 
+    </div>
+
+    <div style="background-color:#7484ae;">
+        <section id="ChicagoMap">
+            <b>Chicago Public Libraries Maps</b><br>
+            These maps show the distribution of library attendees in 
+            Chicago in the years 2013 and 2023. The darker
+             the section, the more attendees to libraries in that zip code.
+              The dots signify the location of the individual libraries
+               Search up a 
+              library to see how many visitors it had in that year.
+            
+        </section>
+    </div>
+
+    <div class="mycontainer"> 
+        <div style="padding-top: 20px;">
+        <p><b>2013 Chicago Public Libraries</b><br><br> A map of Chicago's 80 libraries divided by zip codes.</p>
+        <p>The zip code 60605 overwhelmingly has the most visitors. This is because of the historic Harold Washington Library, which garners the most visitors.</p>
+    </div>
+    </div>
+
+    <div class="mycontainer">
+        <div class="flourish-embed flourish-map" data-src="visualisation/20502295">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20502295/thumbnail" width="100%" alt="map visualization" /></noscript>
+        </div>
+
+        <div class="mycontainer">
+            <p><b>2023 Chicago Public Libraries</b></p>
+            <p>Two libraries have been added in the past 10 years: Little Italy (2019) and Water Works (2021).</p>
+        <p>Harold Washington Library still has the most visitors. However, there is a more even distribution of library visitors across Chicago compared to 2013.</p> </div>
+
+        <div class="flourish-embed flourish-map" data-src="visualisation/20502584">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20502584/thumbnail" width="100%" alt="map visualization" /></noscript>
+        </div>
+    </div>
+
+    <section>Though the attendance of libraries has evened out in Chicago, it is important to remember that every library has seen a drop of attendance. Below is a side-by-side comparison of monthly visitors in 2013 and 2023</section>
+
+    <div class="mycontainer">
+        <div>
+        <p><b>2013 Visitors Per Month</b></p>
+        <p>A Donut Chart and Bar Graph of the total number of attendees to Chicago public libraries divided per month.</p>
+        <p> July is the most popular month with 966,000 visitors.</p>
+    </div>
+    </div>
+
+    <div class="charts">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20559717">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559717/thumbnail" width="100%" alt="2013 pie chart visualization" /></noscript>
+        </div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20559751">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559751/thumbnail" width="100%" alt="2013 bar chart visualization" /></noscript>
+        </div>
+    </div>
+
+    <div class="mycontainer">
+        <div>
+        <p><b>2023 Visitors Per Month</b></p>
+        <p></p>
+    </div>
+    </div>
+
+
+    <div class="charts" id="Pie" >
+        <div class="flourish-embed flourish-chart" alt="Chicago Library Visitors Pie Chart" style="width:100%;" data-src="visualisation/20559624">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%" alt="chart visualization" /></noscript>
+        </div>
+        <div class="flourish-embed flourish-chart" id="Bar" alt="Chicago Library Visitors bar chart visualization" style="width:100%;" data-src="visualisation/20502752">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail" alt="bar chart visualization" width="100%" /></noscript>
+        </div>
+    </div>
+
+    <div class="mycontainer">
+        <div><b><p>What this shows</b></p>
+        <p>Library visitorship as plummetted due to the pandemic and better tecnhology. However, there is also a more even disributions of library visitor numbers across zip codes and months, implying the remaining visitors are dedicated to the libraries.</p></div>
+    </div>
+
+    <section id="HowTo"><b>How I found this data</b>
+    <br> I went to the Chicago Data Portal and compiled ten years of library visitor numbers into one google sheets. The google sheets and Chicago Data Portal are linked in the navigation bar.</section>
+    <div class="mycontainer">
+        
+        <div><b><p>Line Graph</p></b><p>I calculated the sum of all the libraries total visitorship and inputted it into a Flourish line graph.</p></div>
+
+    </div>
+    <div class="mycontainer">
+        
+        <div><b><p>Map</p></b><p>I created a pivot table for the years 2013 and 2023 to find the number of visitors per zip code. I then searched for all the latitude and longitude coordinates for the library addresses and inputted them into the Flourish set.</p></div>
+
+    </div>
+
+    <div class="mycontainer">
+        
+        <div><b><p>Bar Chart and Bar Graph</p></b><p>I calculated the sum of each respective month and made a chart for the total visitors per month of the years 2013 and 2023. I then inputted the data into Flourish</p></div>
+
+    </div>
+
+    <footer>
+        <p class="footer"><i>Website designed by Mia Schmitt &copy; 2025</i></p>
+    </footer>
+
 </body>
 
 </html>
