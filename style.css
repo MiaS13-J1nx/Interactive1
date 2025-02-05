@@ -54,6 +54,7 @@ body {
     background-color: #122c89;
     border-radius: 25px;
     color: black;
+    text-align: center; /* Add this line */
   }
   
   section {
@@ -62,6 +63,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: #9ebcef;
     font-size: x-large;
+    text-align: center;
   }
   
   #container, #gallery-container {
