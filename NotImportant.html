@@ -34,7 +34,6 @@
 
         nav a {
             margin: 0 15px;
-            text-decoration: none;
             color: #c6c6c6;
             padding: 10px 15px;
             border-radius: 5px;
@@ -87,7 +86,7 @@
         }
 
         .faq-question {
-            background-color: #4CAF50;
+            background-color: #2b087eb1;
             color: white;
             padding: 16px;
             font-size: 16px;
@@ -98,18 +97,31 @@
             outline: none;
             border-radius: 8px;
             transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: '▼'; /* Unicode character for down arrow */
+            position: absolute;
+            right: 10px;
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active::after {
+            transform: rotate(180deg); /* Rotate arrow when active */
         }
 
         .faq-question:hover {
-            background-color: #45a049;
+            background-color: #725cb5;
         }
 
         .faq-answer {
             max-height: 0;
             overflow: hidden;
             padding: 0 16px;
-            background-color: #00265b;
-            border: 1px solid #ddd;
+            background-color: #5d779e;
+            border: 1px solid #000475;
             margin-top: 5px;
             border-radius: 8px;
             transition: max-height 0.5s ease, padding 0.5s ease;
@@ -152,7 +164,7 @@
                 padding: 12px;
                 flex-direction: column;
                 align-items: flex-start;
-            }
+               
 
             .faq-answer img {
                 margin-bottom: 10px;
@@ -173,15 +185,33 @@
 
     <div class="container">
         <div class="faq-section">
-            <button class="faq-question">Who is the Once-ler?</button>
+            <button class="faq-question">The Daily Northwestern Advertising Representative</button>
             <div class="faq-answer">
                 <img src="headshot1.jpg" width="100" alt="My Headshot">
-                <p>The Once-ler is a character from Dr. Seuss's book "The Lorax." He is the narrator and the one responsible for the environmental destruction in the story.</p>
+                <p>Sept. 2023 - present</p>
+                <p>I work for the Student Publishing Company as an advertiser for The Daily Northwestern newspaper. I have solicited $4200 in ads so far. I also create campaign invoices, put together tear sheets, and help out with the SPC Syllabus and production logistics. I have been entrusted with confidential information.
+                </p>
             </div>
         </div>
 
         <div class="faq-section">
-            <button class="faq-question">What did the Once-ler do?</button>
+            <button class="faq-question">Kroger Smoothie-Maker</button>
+            <div class="faq-answer">
+                <img src="headshot1.jpg" width="100" alt="My Headshot">
+                <p>The Once-ler cut down Truffula Trees to produce Thneeds, which led to the depletion of natural resources and environmental degradation.</p>
+            </div>
+        </div>
+        
+        <div class="faq-section">
+            <button class="faq-question">Mochinut Doughnut Fryer and Cashier</button>
+            <div class="faq-answer">
+                <img src="headshot1.jpg" width="100" alt="My Headshot">
+                <p>The Once-ler cut down Truffula Trees to produce Thneeds, which led to the depletion of natural resources and environmental degradation.</p>
+            </div>
+        </div>
+        
+        <div class="faq-section">
+            <button class="faq-question">Lou Malnati's Cashier and Pizza Runner</button>
             <div class="faq-answer">
                 <img src="headshot1.jpg" width="100" alt="My Headshot">
                 <p>The Once-ler cut down Truffula Trees to produce Thneeds, which led to the depletion of natural resources and environmental degradation.</p>
@@ -189,7 +219,7 @@
         </div>
 
         <div class="faq-section">
-            <button class="faq-question">Why is the Once-ler important?</button>
+            <button class="faq-question">McDonald's Cashier</button>
             <div class="faq-answer">
                 <img src="headshot1.jpg" width="100" alt="My Headshot">
                 <p>The Once-ler's story serves as a cautionary tale about the consequences of environmental exploitation and the importance of sustainability.</p>
