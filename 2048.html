@@ -4,10 +4,9 @@
     
 <style>body {
     background-color: #fff;
-    overflow: auto; /* Enable scrolling */
+    overflow: hidden;
     padding: 10;
     margin: 0;
-    padding-bottom: 500px; /* Further increase space at the bottom */
   }
   
   
@@ -109,8 +108,8 @@
   /* field */
   .field, .grid {
     position: absolute;
-    width: 510px;
-    height: 510px;
+    width: 400px; /* Adjust width */
+    height: 400px; /* Adjust height */
     background-color: #888;
     top: 150px;
     border-radius: 0px;
@@ -131,16 +130,16 @@
   }
   
   .row, .grid_row {
-    width: 510px;
-    height: 135px;
+    width: 400px; /* Adjust width */
+    height: 100px; /* Adjust height */
     position: relative;
     display: table-row;
   }
   
   .cell, .grid_cell {
     background-color: white;
-    width: 125px;
-    height: 125px;
+    width: 90px; /* Adjust width */
+    height: 90px; /* Adjust height */
     position: relative;
     display: table-cell;
     border-radius: 0px;
@@ -164,8 +163,8 @@
   
   .tile {
     opacity: 1;
-    width: 118px;
-    height: 126px;
+    width: 85px; /* Adjust width */
+    height: 85px; /* Adjust height */
     background-color: white;
     z-index: 150;
     border-radius: 0px;
@@ -255,9 +254,6 @@
       </div>
       <div class='' id='status'>
       </div>
-      <div style="text-align: center; margin-top: 20px;">
-        <img src="christmas.jpg" alt="Christmas Image" style="max-width: 100%; height: auto;">
-    </div>
     </body>
 
     <script>window.onload = function() {
