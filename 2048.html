@@ -108,8 +108,8 @@
   /* field */
   .field, .grid {
     position: absolute;
-    width: 400px; /* Adjust width */
-    height: 400px; /* Adjust height */
+    width: 350px; /* Adjust width */
+    height: 350px; /* Adjust height */
     background-color: #888;
     top: 150px;
     border-radius: 0px;
@@ -130,16 +130,16 @@
   }
   
   .row, .grid_row {
-    width: 400px; /* Adjust width */
-    height: 100px; /* Adjust height */
+    width: 350px; /* Adjust width */
+    height: 87.5px; /* Adjust height */
     position: relative;
     display: table-row;
   }
   
   .cell, .grid_cell {
     background-color: white;
-    width: 90px; /* Adjust width */
-    height: 90px; /* Adjust height */
+    width: 75px; /* Adjust width */
+    height: 75px; /* Adjust height */
     position: relative;
     display: table-cell;
     border-radius: 0px;
@@ -163,8 +163,8 @@
   
   .tile {
     opacity: 1;
-    width: 85px; /* Adjust width */
-    height: 85px; /* Adjust height */
+    width: 70px; /* Adjust width */
+    height: 70px; /* Adjust height */
     background-color: white;
     z-index: 150;
     border-radius: 0px;
@@ -312,12 +312,13 @@
             } 
           }
           
-          var randomValue = Math.floor((Math.random()*7) +1); //create value 1, 2, 3 or 4
+          var randomValue = Math.floor((Math.random()*8) +1); //create value 1, 2, 3 or 4
           if (randomValue == 3) {randomValue=2};              //3 --> 4
-          if (randomValue == 1) {randomValue=2};              //1 --> 2
-          if (randomValue == 5) {randomValue=2};      
-          if (randomValue == 6) {randomValue=2};   
-          if (randomValue == 7) {randomValue=2048};         
+          if (randomValue == 1) {randomValue=2};  
+          if (randomValue == 5) {randomValue=2}; 
+          if (randomValue == 6) {randomValue=2}; 
+          if (randomValue == 7) {randomValue=2}; 
+          if (randomValue == 8) {randomValue=2};             //1 --> 2
           var position = document.getElementById(''+randomX +randomY);
           var tile = document.createElement('DIV');           //create div at x, y
           position.appendChild(tile);                         //tile becomes child of grid cell
@@ -540,7 +541,7 @@
         case 8:
             tile.style.background = "url('https://media.vlipsy.com/vlips/pQK6KXPH/preview.jpg') no-repeat center";
             tile.style.backgroundSize = "cover";
-            tile.style.color = '#ADE8F8';
+            tile.style.color = 'ADE8F8';
             break;
         case 16:
             tile.style.background = "url('https://s3.zerochan.net/Miraculous.Ladybug.240.2715244.jpg') no-repeat center";
@@ -582,9 +583,9 @@
             tile.style.fontSize = "40px";
             break;
         case 2048:
-            tile.style.background = "url('	https://media.tenor.com/qRq-Dq-uA24AAAAM/rick-roll.gif";
+            tile.style.background = "url('https://media.tenor.com/qRq-Dq-uA24AAAAM/rick-roll.gif') no-repeat center";
             tile.style.backgroundSize = "cover";
-            tile.style.color = '#CA8413';
+            tile.style.color = '#E2B45F';
             tile.style.fontSize = "40px";
             document.getElementById('status').className = 'won';
             break;
