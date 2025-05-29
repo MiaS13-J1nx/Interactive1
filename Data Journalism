@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library Chart</title>
+    <link rel="icon" type="image/x-icon" href="headshot.jpg">
+    <link rel="stylesheet" type="text/css" href="style.CSS">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<!-- I used the same style for all of my web pages. I used chat gpt to help with mobile formatting  -->
+
+<style>body {
+  background-color: rgb(166, 169, 184);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 130px 20px 10px;
+}
+
+header, footer {
+  background-color: #00265b;
+  color: #c6c6c6;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+header {
+  top: 0;
+  position: fixed;
+}
+
+footer {
+  bottom: 0;
+  color: #5e6a9c;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #c6c6c6;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+p {
+  color: rgb(176, 176, 226);
+  text-align: center;
+  font-family: trebuchet;
+  font-size: x-large;
+}
+
+.mycontainer, section {
+  width: 60%;
+  margin: 20px auto;
+  padding: 15px;
+  border: 5px solid rgb(24, 104, 144);
+  background-color: #122c89;
+  border-radius: 25px;
+  color: black;
+
+}
+
+section {
+  background-color: rgb(54, 28, 146);
+  border-color: rgb(9, 23, 58);
+  font-family: 'Times New Roman', Times, serif;
+  color: #9ebcef;
+  font-size: x-large;
+  text-align: center;
+}
+
+#container, #gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.gallery:hover {
+  border-color: #1078e0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 120px;
+  }
+
+  #container, #gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .mycontainer, section {
+    width: 90%;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.charts .flourish-embed {
+  width: 48%;
+}
+
+@media (max-width: 768px) {
+  .charts .flourish-embed {
+    width: 100%;
+  }
+
+  section {
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}</style>
+
+
+<body>
+    <!--    <header>
+        <nav>
+            <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
+            <a href="AboutMe.html">Main Page</a>
+         <a href="CreativeWriting.html">Creative Writing </a>
+
+        </nav>
+        <h1>Chicago Library Attendance</h1>
+
+        <nav>
+            <a href="#LineGraph" style="font-size: 14px">Line Graph</a>
+            <a href="#ChicagoMap" style="font-size: 14px">Maps</a>
+            <a href="#Pie" style="font-size: 14px">2013 vs 2023 Attendance</a>
+            <a href="https://docs.google.com/spreadsheets/d/1EeZJaUjQvjHQ5wuycPwcNIFp5pUHaHNbB99zguhX_So/edit?usp=sharing" style="font-size: 14px">Google Sheets</a>
+            <a href="https://data.cityofchicago.org/browse?q=library+visitors&sortBy=relevance&pageSize=20&page=1" style="font-size: 14px">Chicago Data Portal </a>
+            <a href="#HowTo" style="font-size: 14px">HowTo</a>
+        </nav>
+    </header>
+        -->
+    <section id="LineGraph">
+        <b>Total Library Attendance Throughout the Years</b> <br>
+        Public libraries are a critical element of free education and community. Technology has made information more accessible, influencing library attendance.
+    </section>
+
+    <div class="mycontainer">
+        <div><p>As a bookworm from the Chicago suburbs, I've spent my childhood in my local public library. This webpage will explore how library visitor habits have shifted throughout the years.</p></div>
+    </div>
+
+    <div class="graph">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20560105">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20560105/thumbnail" width="100%" alt="chart visualization" /></noscript>
+        </div>
+    </div>
+
+    <!-- I've kept the graphs all the same font and color. I used Flourish for all of my graphs. -->
+
+    <div class="mycontainer">
+        <div>
+        <p>Library attendance has gradually declined from 2013-2020 and plummeted due to Covid-19. As the pandemic has ended, more people are returning to Chicago public libraries, but in far fewer numbers.</p>
+    </div> 
+    </div>
+
+<!--    <div style="background-color:#7484ae;"> -->
+        <section id="ChicagoMap">
+            <b>Chicago Public Libraries Maps</b><br>
+            These maps show the distribution of library attendees in 
+            Chicago in the years 2013 and 2023. The darker
+             the section, the more attendees to libraries in that zip code.
+              The dots signify the location of the individual libraries
+               Search up a 
+              library to see how many visitors it had in that year.
+            
+        </section>
+    </div>
+
+    <div class="mycontainer"> 
+        <div style="padding-top: 20px;">
+        <p><b>2013 Chicago Public Libraries</b><br><br> A map of Chicago's 80 libraries divided by zip codes.</p>
+        <p>The zip code 60605 overwhelmingly has the most visitors. This is because of the historic Harold Washington Library, which garners the most visitors.</p>
+    </div>
+    </div>
+
+    <div class="mycontainer">
+      <div class="flourish-embed flourish-map" data-src="visualisation/23478802"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23478802/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+
+        <div class="mycontainer">
+            <p><b>2023 Chicago Public Libraries</b></p>
+            <p>Two libraries have been added in the past 10 years: Little Italy (2019) and Water Works (2021).</p>
+        <p>Harold Washington Library still has the most visitors. However, there is a more even distribution of library visitors across Chicago compared to 2013.</p> </div>
+
+        <div class="flourish-embed flourish-map" data-src="visualisation/23467957"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23467957/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+    </div>
+
+    <section>Though the attendance of libraries has evened out in Chicago, it is important to remember that every library has seen a drop of attendance. Below is a side-by-side comparison of monthly visitors in 2013 and 2023</section>
+
+    <div class="mycontainer">
+        <div>
+        <p><b>2013 Visitors Per Month</b></p>
+        <p>A Donut Chart and Bar Graph of the total number of attendees to Chicago public libraries divided per month.</p>
+        <p> July is the most popular month with 966,000 visitors.</p>
+    </div>
+    </div>
+
+    <div class="charts">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20559717">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559717/thumbnail" width="100%" alt="2013 pie chart visualization" /></noscript>
+        </div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/20559751">
+            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559751/thumbnail" width="100%" alt="2013 bar chart visualization" /></noscript>
+        </div>
+    </div>
+
+    <div class="mycontainer">
+        <div>
+        <p><b>2023 Visitors Per Month</b></p>
+        <p></p>
+    </div>
+    </div>
+
+
+    <div class="charts" id="Pie" >
+        <div class="flourish-embed flourish-chart" alt="Chicago Library Visitors Pie Chart" style="width:100%;" data-src="visualisation/20559624">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%" alt="chart visualization" /></noscript>
+        </div>
+        <div class="flourish-embed flourish-chart" id="Bar" alt="Chicago Library Visitors bar chart visualization" style="width:100%;" data-src="visualisation/20502752">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail" alt="bar chart visualization" width="100%" /></noscript>
+        </div>
+    </div>
+
+    <div class="mycontainer">
+        <div><b><p>What this shows</b></p>
+        <p>Library visitorship as plummetted due to the pandemic and better tecnhology. However, there is also a more even disributions of library visitor numbers across zip codes and months, implying the remaining visitors are dedicated to the libraries.</p></div>
+    </div>
+
+    <section id="HowTo"><b>How I found this data</b>
+    <br> I went to the Chicago Data Portal and compiled ten years of library visitor numbers into one google sheets. The google sheets and Chicago Data Portal are linked in the navigation bar.</section>
+    <div class="mycontainer">
+        
+        <div><b><p>Line Graph</p></b><p>I calculated the sum of all the libraries total visitorship and inputted it into a Flourish line graph.</p></div>
+
+    </div>
+    <div class="mycontainer">
+        
+        <div><b><p>Map</p></b><p>I created a pivot table for the years 2013 and 2023 to find the number of visitors per zip code. I then searched for all the latitude and longitude coordinates for the library addresses and inputted them into the Flourish set.</p></div>
+
+    </div>
+
+    <div class="mycontainer">
+        
+        <div><b><p>Bar Chart and Bar Graph</p></b><p>I calculated the sum of each respective month and made a chart for the total visitors per month of the years 2013 and 2023. I then inputted the data into Flourish</p></div>
+
+    </div>
+
+    <footer>
+        <p class="footer"><i>Website designed by Mia Schmitt &copy; 2025</i></p>
+    </footer>
+
+</body>
+
+</html>
