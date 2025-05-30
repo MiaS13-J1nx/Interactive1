@@ -12,296 +12,324 @@
 </head>
 <!-- I used the same style for all of my web pages. I used chat gpt to help with mobile formatting  -->
 
-<style>body {
-  background-color: rgb(166, 169, 184);
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 130px 20px 10px;
-}
+<style>
+    body {
+        background-color: rgb(166, 169, 184);
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 130px 20px 10px;
+    }
 
-header, footer {
-  background-color: #00265b;
-  color: #c6c6c6;
-  text-align: center;
-  padding: 5px 0;
-  width: 100%;
-  left: 0;
-  z-index: 1000;
-}
+    header,
+    footer {
+        background-color: #00265b;
+        color: #c6c6c6;
+        text-align: center;
+        padding: 5px 0;
+        width: 100%;
+        left: 0;
+        z-index: 1000;
+    }
 
-header {
-  top: 0;
-  position: fixed;
-}
+    header {
+        top: 0;
+        position: fixed;
+    }
 
-footer {
-  bottom: 0;
-  color: #5e6a9c;
-}
+    footer {
+        bottom: 0;
+        color: #5e6a9c;
+    }
 
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #c6c6c6;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #c6c6c6;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
 
-nav a:hover {
-  background-color: #0056b3;
-  color: #fff;
-}
+    nav a:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
 
-p {
-  color: rgb(176, 176, 226);
-  text-align: center;
-  font-family: trebuchet;
-  font-size: x-large;
-}
+    p {
+        color: rgb(176, 176, 226);
+        text-align: center;
+        font-family: trebuchet;
+        font-size: x-large;
+    }
 
-.mycontainer, section {
-  width: 60%;
-  margin: 20px auto;
-  padding: 15px;
-  border: 5px solid rgb(24, 104, 144);
-  background-color: #122c89;
-  border-radius: 25px;
-  color: black;
+    .mycontainer,
+    section {
+        width: 60%;
+        margin: 20px auto;
+        padding: 15px;
+        border: 5px solid rgb(24, 104, 144);
+        background-color: #122c89;
+        border-radius: 25px;
+        color: black;
 
-}
+    }
 
-section {
-  background-color: rgb(54, 28, 146);
-  border-color: rgb(9, 23, 58);
-  font-family: 'Times New Roman', Times, serif;
-  color: #9ebcef;
-  font-size: x-large;
-  text-align: center;
-}
+    section {
+        background-color: rgb(54, 28, 146);
+        border-color: rgb(9, 23, 58);
+        font-family: 'Times New Roman', Times, serif;
+        color: #9ebcef;
+        font-size: x-large;
+        text-align: center;
+        width: 70%
+    }
 
-#container, #gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-}
+    #container,
+    #gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
 
-.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  width: 180px;
-  text-align: center;
-  transition: border-color 0.3s ease;
-}
+    .gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        width: 180px;
+        text-align: center;
+        transition: border-color 0.3s ease;
+    }
 
-.gallery:hover {
-  border-color: #1078e0;
-}
+    .gallery:hover {
+        border-color: #1078e0;
+    }
 
-.gallery img {
-  width: 100%;
-  height: auto;
-}
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
 
-.desc {
-  padding: 15px;
-}
+    .desc {
+        padding: 15px;
+    }
 
-@media (max-width: 768px) {
-  body {
-    padding-top: 120px;
-  }
+    @media (max-width: 768px) {
+        body {
+            padding-top: 120px;
+        }
 
-  #container, #gallery-container {
-    flex-direction: column;
-    align-items: center;
-  }
+        #container,
+        #gallery-container {
+            flex-direction: column;
+            align-items: center;
+        }
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-  nav a {
-    margin: 5px 0;
-  }
+        nav a {
+            margin: 5px 0;
+        }
 
-  .mycontainer, section {
-    width: 90%;
-  }
+        .mycontainer,
+        section {
+            width: 90%;
+        }
 
-  .gallery {
-    width: 100%;
-  }
-}
+        .gallery {
+            width: 100%;
+        }
+    }
 
-.charts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
-  gap: 20px;
-}
+    .charts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+        gap: 20px;
+    }
 
-.charts .flourish-embed {
-  width: 48%;
-}
+    .charts .flourish-embed {
+        width: 48%;
+    }
 
-@media (max-width: 768px) {
-  .charts .flourish-embed {
-    width: 100%;
-  }
+    @media (max-width: 768px) {
+        .charts .flourish-embed {
+            width: 100%;
+        }
 
-  section {
-    width: 95%;
-    font-size: 1rem;
-  }
+        section {
+            width: 95%;
+            font-size: 1rem;
+        }
 
-  nav a {
-    font-size: 12px;
-  }
+        nav a {
+            font-size: 12px;
+        }
 
-  p {
-    font-size: 1rem;
-  }
-}</style>
+        p {
+            font-size: 1rem;
+        }
+    }
+</style>
 
 
 <body>
-    <!--    <header>
+    <header>
         <nav>
-            <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?usp=sharing">Resume</a>
-            <a href="AboutMe.html">Main Page</a>
-         <a href="CreativeWriting.html">Creative Writing </a>
+            <a href="https://docs.google.com/document/d/1IDONik1Qux-xfsV8V7DAobabxBWiUt3cz3Ycr-LPcAo/edit?usp=sharing">Story Memo</a>
+            <a href="AboutMe.html">About Me</a>
 
         </nav>
         <h1>Chicago Library Attendance</h1>
 
         <nav>
-            <a href="#LineGraph" style="font-size: 14px">Line Graph</a>
+            <a href="#LineGraph" style="font-size: 14px">Lead Pipe Story</a>
             <a href="#ChicagoMap" style="font-size: 14px">Maps</a>
-            <a href="#Pie" style="font-size: 14px">2013 vs 2023 Attendance</a>
-            <a href="https://docs.google.com/spreadsheets/d/1EeZJaUjQvjHQ5wuycPwcNIFp5pUHaHNbB99zguhX_So/edit?usp=sharing" style="font-size: 14px">Google Sheets</a>
-            <a href="https://data.cityofchicago.org/browse?q=library+visitors&sortBy=relevance&pageSize=20&page=1" style="font-size: 14px">Chicago Data Portal </a>
+            <a href="#Pie" style="font-size: 14px">Mount Prospect Example</a>
+            <a href="https://drive.google.com/file/d/1DETwY_BCvjO7_eckSI8R4gXTYFn1Nfoy/view?usp=sharing" style="font-size: 14px">See the Data!</a>
+            <a href="https://docs.google.com/spreadsheets/d/133NahAy3HWAP5tlXt3kjECLKrqAGxC-0zVa1jQK4dfg/edit?usp=sharing" style="font-size: 14px">Sheets </a>
             <a href="#HowTo" style="font-size: 14px">HowTo</a>
         </nav>
     </header>
-        -->
+
     <section id="LineGraph">
-        <b>Total Library Attendance Throughout the Years</b> <br>
-        Public libraries are a critical element of free education and community. Technology has made information more accessible, influencing library attendance.
+        <b>New Rule Gives Insight on Public Health</b> <br>
+        Lead water service lines have been banned since 1986. The government is finally eliminating them once and for all.
     </section>
 
     <div class="mycontainer">
-        <div><p>As a bookworm from the Chicago suburbs, I've spent my childhood in my local public library. This webpage will explore how library visitor habits have shifted throughout the years.</p></div>
+        <div>
+            <p>In October 2024, President Biden issued a final rule: remove all lead service lines in the next 10 years. With over 9.2 million lines in America, state and local governments have to scale up their replacement programs to meet this lofty requirement.</p>
+            <br>
+            <p>Lead pipes can corrode and leach lead into drinking water, which can cause damage to the nervous system, impaired hearing, etc. Children are especially vulnerable to lead contamination and can develop anemia, hyperactivity, slowed growth and other consequences from ingestion. In rare cases, lead poisoning can even lead to seizures and death. Lead service lines are found in houses made before 1986—the year the Safe Drinking Water Act abolished using lead pipes for public water systems. A 2024 study approximated that ⅔ of Chicago children under six years old may be exposed to lead-contaminated water.  In 2023, Chicago reported 958 children aged 1-5 years with lead poisoning. The EPA states there is no safe level of lead consumption. The only solution is to replace the lead service lines entirely.</p>
+            <br>
+            <p>According to Casey Botterman, Mount Prospect Water and Sewer Superintendent, “Illinois is the leader in all states with the most amount of lead in the country.” After Biden’s final rule, the Illinois EPA demanded an inventory from all municipalities regarding their total lead water service lines. </p>
+            <br>
+        </div>
+    </div>
+    <div class="mycontainer">
+        <p>Below is a map of all municipalities with released inventories of their lead water service line counts. Gray municipalities do not have released data. According to The Guardian, Chicago has the most lead service lines of any city in the United States at 400,000 lead service lines. However, their exact service line numbers are not released. </p>
     </div>
 
-    <div class="graph">
-        <div class="flourish-embed flourish-chart" data-src="visualisation/20560105">
-            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20560105/thumbnail" width="100%" alt="chart visualization" /></noscript>
+    <div class="mycontainer" id="ChicagoMap">
+        <div class="flourish-embed flourish-map" data-src="visualisation/23478802">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/23478802/thumbnail" width="100%" alt="map visualization" /></noscript>
+        </div>
+
+    </div>
+
+    <section><b>Increased Funding and Testing</b></section>
+
+    <div class="mycontainer">
+        <p>Water service lines are jointly owned by the homeowner and the government. According to Botterman and the Melrose Park service line replacement plan, a homeowner can expect to pay $8,000–$13,000 to replace their portion of a lead water service line before financial assistance.</p>
+    </div>
+    <div class="mycontainer">
+        <div style="text-align: center">
+            <img src="WaterMain.png" alt="Geneva Water Main Diagram" style="border-radius: 0px;" width=100%">
+        </div>
+        <p>The homeowner is responsible for the service line from the water meter to the B-Box (used to turn the water service on and off to a property) — Photo used with permission from the city of Geneva.</p>
+    </div>
+    </div>
+    </div>
+    <!-- I called Geneva City Hall and got permission to use this diagram -->
+
+    <div class="mycontainer">
+        <div>
+            <p>Due to the high cost, families will put off the project and risk their health. To help the replacement process, the U.S. government pledged to fund 500,000 lead service line replacements from October 2023 to September 2025. This funding helps lower-income municipalities. Currently, there is little perceivable correlation between the percentage of service lines made of lead and the percentage of citizens below the poverty line. </p>
         </div>
     </div>
 
-    <!-- I've kept the graphs all the same font and color. I used Flourish for all of my graphs. -->
 
     <div class="mycontainer">
-        <div>
-        <p>Library attendance has gradually declined from 2013-2020 and plummeted due to Covid-19. As the pandemic has ended, more people are returning to Chicago public libraries, but in far fewer numbers.</p>
-    </div> 
+        <p>Along with the boosted service line replacement funding, many municipalities are forced to perform more lead and copper tests. These tests are taken from homes with lead water service lines to determine if the water is contaminated with lead. In Cook County, 90 of the 134 municipalities were ordered to increase their tests by January 2025. Hover over the different municipalities to see their required number of tests and their frequency taken.</p>
+        <div class="flourish-embed flourish-map" data-src="visualisation/23467957">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/23467957/thumbnail" width="100%" alt="map visualization" /></noscript>
+        </div>
     </div>
 
-<!--    <div style="background-color:#7484ae;"> -->
-        <section id="ChicagoMap">
-            <b>Chicago Public Libraries Maps</b><br>
-            These maps show the distribution of library attendees in 
-            Chicago in the years 2013 and 2023. The darker
-             the section, the more attendees to libraries in that zip code.
-              The dots signify the location of the individual libraries
-               Search up a 
-              library to see how many visitors it had in that year.
-            
-        </section>
-    </div>
+    </div>"
 
-    <div class="mycontainer"> 
-        <div style="padding-top: 20px;">
-        <p><b>2013 Chicago Public Libraries</b><br><br> A map of Chicago's 80 libraries divided by zip codes.</p>
-        <p>The zip code 60605 overwhelmingly has the most visitors. This is because of the historic Harold Washington Library, which garners the most visitors.</p>
-    </div>
+    <section id="Pie"><b>Mount Prospect</b>
+    </section>
+
+    <div class="mycontainer">
+        <div style="display: flex; justify-content: center;">
+            <img src="MPMap.png" alt="Mount Prospect Lead Service Line Location Map" style="border-radius: 0px; width:65%;">
+        </div>
+        <p>-Photo shows Mount Prospect's homes with lead service lines. Photo from Mount Prospect FOIA Request</p>
     </div>
 
     <div class="mycontainer">
-      <div class="flourish-embed flourish-map" data-src="visualisation/23478802"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23478802/thumbnail" width="100%" alt="map visualization" /></noscript></div>
-
+        <p>Mount Prospect, a Cook County village, currently has 698 lead service lines. The Illinois Environmental Protection Agency (IEPA) ordered Mount Prospect to increase from 30 lead and copper tests every three years to 60 tests twice a year. The requirement will remain in place until all lead service lines are replaced. </p>
         <div class="mycontainer">
-            <p><b>2023 Chicago Public Libraries</b></p>
-            <p>Two libraries have been added in the past 10 years: Little Italy (2019) and Water Works (2021).</p>
-        <p>Harold Washington Library still has the most visitors. However, there is a more even distribution of library visitors across Chicago compared to 2013.</p> </div>
-
-        <div class="flourish-embed flourish-map" data-src="visualisation/23467957"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23467957/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+            <p><i>“It was a pain to get 30 houses to participate every three years, now I have to get 60 twice a year?”</i> Botterman says. <i>“We’re trying to get rid of it as soon as possible so we won’t have to do the sampling.”</i></p>
+        </div>
+        <p>This cumbersome process has motivated Mount Prospect Public Works to shrink its lead service replacement timeline from 15 years to five years. While they do not receive funding from the state, Mount Prospect has an annual $100,000 budget to cover ⅔ of the homeowner’s costs for the replacement. This is on a first-come-first-serve basis, which means homeowners who do not receive funding have historically pushed off the project in the hope of receiving funding later. Mount Prospect Public Works plans to speed up the replacement process by increasing funding to completely cover all replacement costs by 2027. </p>
     </div>
 
-    <section>Though the attendance of libraries has evened out in Chicago, it is important to remember that every library has seen a drop of attendance. Below is a side-by-side comparison of monthly visitors in 2013 and 2023</section>
-
-    <div class="mycontainer">
-        <div>
-        <p><b>2013 Visitors Per Month</b></p>
-        <p>A Donut Chart and Bar Graph of the total number of attendees to Chicago public libraries divided per month.</p>
-        <p> July is the most popular month with 966,000 visitors.</p>
-    </div>
-    </div>
+    <!-- <div class="charts"> -->
 
     <div class="charts">
-        <div class="flourish-embed flourish-chart" data-src="visualisation/20559717">
-            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559717/thumbnail" width="100%" alt="2013 pie chart visualization" /></noscript>
-        </div>
-        <div class="flourish-embed flourish-chart" data-src="visualisation/20559751">
-            <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20559751/thumbnail" width="100%" alt="2013 bar chart visualization" /></noscript>
-        </div>
-    </div>
-
-    <div class="mycontainer">
-        <div>
-        <p><b>2023 Visitors Per Month</b></p>
-        <p></p>
-    </div>
-    </div>
-
-
-    <div class="charts" id="Pie" >
-        <div class="flourish-embed flourish-chart" alt="Chicago Library Visitors Pie Chart" style="width:100%;" data-src="visualisation/20559624">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/22117339">
             <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript><img src="https://public.flourish.studio/visualisation/20559624/thumbnail" width="100%" alt="chart visualization" /></noscript>
-        </div>
-        <div class="flourish-embed flourish-chart" id="Bar" alt="Chicago Library Visitors bar chart visualization" style="width:100%;" data-src="visualisation/20502752">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript><img src="https://public.flourish.studio/visualisation/20502752/thumbnail" alt="bar chart visualization" width="100%" /></noscript>
+            <noscript><img src="https://public.flourish.studio/visualisation/22117339/thumbnail" width="100%" alt="chart visualization" /></noscript>
         </div>
     </div>
-
     <div class="mycontainer">
-        <div><b><p>What this shows</b></p>
-        <p>Library visitorship as plummetted due to the pandemic and better tecnhology. However, there is also a more even disributions of library visitor numbers across zip codes and months, implying the remaining visitors are dedicated to the libraries.</p></div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/23502081">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/23502081/thumbnail" width="50%" alt="chart visualization" /></noscript>
+        </div>
+        <p>Both charts show the increase of lead contamination found during Mount Prospect lead and copper tests. Though the contamination level is typically below the MCL, any amount of lead in drinking water is dangerous </p>
+    </div>
+    </div>
+    </div>
+
+    <section><b>Conclusion </b></section>
+    <div class="mycontainer">
+        <p>Increasing the funding can help ensure long-term health for residents. Similar scenarios are unfolding across America. According to EPA estimates, Biden’s final rule “will prevent up to 900,000 infants from being born with low birthweight, stop up to 200,000 IQ points lost in children and reduce up to 1,500 cases of premature death from heart disease.”
+        </p>
+        <br>
+        <p>However, President Trump has signaled they may roll back regulations on lead in drinking water. According to the EPA website, the Department of Government Efficiency (DOGE) DOGE has already cut over 400 grants from nine “unnecessary” EPA programs, which totals to $1.7 billion. President Trump has publicly announced plans to cut 65% of the EPA’s budget.</p>
+        <br>
+        <p>The fate of the lead water service line rules is up in the air. Nevertheless, it is undeniable that lead contamination in drinking water is negatively impacting Cook County residents. Without proper funding and law enforcement, local and state governments may drag their feet when replacing lead service lines—compromising community health in the process.</p>
     </div>
 
     <section id="HowTo"><b>How I found this data</b>
-    <br> I went to the Chicago Data Portal and compiled ten years of library visitor numbers into one google sheets. The google sheets and Chicago Data Portal are linked in the navigation bar.</section>
+        <br> I used a mixture of Census data, Chicago public records, articles, and FOIA data. To see my sources, check out the story memo
+    </section>
     <div class="mycontainer">
-        
-        <div><b><p>Line Graph</p></b><p>I calculated the sum of all the libraries total visitorship and inputted it into a Flourish line graph.</p></div>
+
+        <div><b>
+                <p>Maps</p>
+            </b>
+            <p>I had 36 unique municipality spreadsheets, and I manually compiled them into one main document. This required using pivot tables and filtering to get the correct numbers. I also went on census.gov for the population and poverty statistics, and manually added them. Finally, I joined my test quantity spreadsheet to my main spreadsheet using VLOOKUP. Since some municipalities were written differently, I went in afterwards to manually input the data that was not entered.</p>
+        </div>
 
     </div>
     <div class="mycontainer">
-        
-        <div><b><p>Map</p></b><p>I created a pivot table for the years 2013 and 2023 to find the number of visitors per zip code. I then searched for all the latitude and longitude coordinates for the library addresses and inputted them into the Flourish set.</p></div>
+
+        <div><b>
+                <p>Service Line Diagram</p>
+            </b>
+            <p>I called Geneva Public Hall and asked for permission to use the photo for a class project. They granted permission.</p>
+        </div>
 
     </div>
 
     <div class="mycontainer">
-        
-        <div><b><p>Bar Chart and Bar Graph</p></b><p>I calculated the sum of each respective month and made a chart for the total visitors per month of the years 2013 and 2023. I then inputted the data into Flourish</p></div>
+
+        <div><b>
+                <p>Bar Chart and Pie Chart</p>
+            </b>
+            <p>Since I am from Mount Prospect, I was interested in learning more about my village's specific lead service line efforts. Using FOIA, I received all lab documents regarding the results of the lead and copper results since the program began (2005). I manually entered each address and data number into a spreadsheet. For the bar chart, I cross examined the addresses from the past two tests to see if any houses were reassessed, then joined that data together.</p>
+        </div>
 
     </div>
 
