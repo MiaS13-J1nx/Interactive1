@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mia S Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="headshot.jpg">
+  <link rel="stylesheet" type="text/css" href="style.CSS">
+</head>
+
+<style>body {
+  background-color: rgb(166, 169, 184);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 130px 20px 10px;
+}
+
+header, footer {
+  background-color: #00265b;
+  color: #c6c6c6;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+header {
+  top: 0;
+  position: fixed;
+}
+
+footer {
+  bottom: 0;
+  color: #5e6a9c;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #c6c6c6;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+p {
+  color: rgb(176, 176, 226);
+  text-align: center;
+  font-family: trebuchet;
+  font-size: x-large;
+}
+
+.mycontainer, section {
+  width: 60%;
+  margin: 20px auto;
+  padding: 15px;
+  border: 5px solid rgb(24, 104, 144);
+  background-color: #122c89;
+  border-radius: 25px;
+  color: black;
+
+}
+
+section {
+  background-color: rgb(54, 28, 146);
+  border-color: rgb(9, 23, 58);
+  font-family: 'Times New Roman', Times, serif;
+  color: #9ebcef;
+  font-size: x-large;
+  text-align: center;
+}
+
+#container, #gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.gallery:hover {
+  border-color: #1078e0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 120px;
+  }
+
+  #container, #gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .mycontainer, section {
+    width: 90%;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.charts .flourish-embed {
+  width: 48%;
+}
+
+@media (max-width: 768px) {
+  .charts .flourish-embed {
+    width: 100%;
+  }
+
+  section {
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}</style>
+
+
+<body>
+  <header>
+    <nav>
+      <a href="https://docs.google.com/document/d/1Al2ZkTB7EVC8hHrwmLxp0QqLqyI5bYwJH_hIbJgTaRo/edit?tab=t.e2s1c7i6cxuw">Resume</a>
+      <a href="Data Journalism">Data Story</a>    </nav>
+    <h1>Lead  Service Line Story Memo</h1>
+    <nav>
+      <a href="#intro" style="font-size: 14px">Introduction</a>
+      <a href="#videoprojects" style="font-size: 14px">Video Projects</a>
+      <a href="#creativewriting" style="font-size: 14px">Creative Writing</a>
+   <!--   <a href="#ai disclaimer" style="font-size: 14px">AI Disclaimer</a> -->
+    </nav>
+  </header>
+
+  <div class="mycontainer" id="intro">
+    <div style="text-align: center">
+      <img src="headshot1.jpg" width="258px" alt="My Headshot" style="border-radius: 150px;">
+    </div>
+    <p><b>Hi, I'm Mia</b></p>
+    <p>I'm a Sophomore at Northwestern University studying journalism, business, marketing, and creative writing. My passions are writing novels, video editing, and accounting. This website will show you some of my creative projects and data analysis.</p>
+  </div>
+
+  <section id="videoprojects"><b>Video Projects</b></section>
+  <div id="container">
+    <iframe width="400" height="240" alt="ProfileVideo" src="https://youtube.com/embed/BWocDeqbT88"></iframe>
+    <iframe width="400" height="240" alt="NU Nights" src="https://youtube.com/embed/tdMnirnVIks"></iframe>
+<!--    <iframe width="400" height="240" alt="Killer Queen Music Video" src="https://youtube.com/embed/eUMF4Jd5RuE"></iframe> -->
+  </div>
+
+  <center><img src="MeSmile.jpg" width="258px" alt="Me with pink hair" style="border-radius: 150px; margin: 20px auto;"></center>
+
+  <section id="creativewriting"><b>Creative Writing</b></section>
+  <div id="container">
+    <div class="gallery">
+      <a target="_blank" href="https://docs.google.com/document/d/11jJBqZuZ0nCcpf1_DtwzgDfro9UhPkmHi-y3WZHZ1GU/edit?usp=sharing">
+        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+      </a>
+      <div class="desc">The Reflection</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="https://docs.google.com/document/d/1b_iLJtROuLo125tyT601eel7IosOtvCQMoxC7OY_gj4/edit?usp=sharing">
+        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+      </a>
+      <div class="desc">Not Like Other Girls</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="http://old.northbynorthwestern.com/the-other-half/">
+        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+      </a>
+      <div class="desc">The Other Half</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="https://docs.google.com/document/d/19ckIfnjpfVNal9SMnRXVo833iIVqfGAIJbXAArS2tPg/edit?usp=sharing">
+        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+      </a>
+      <div class="desc">Poetry</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="https://docs.google.com/document/d/1boTyv1dW5cc_yIckYzdXXr1jd52cq0A9O7GQO4woKE8/edit?usp=sharing">
+        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.width-500.format-webp.webp" alt="Google Docs Logo">
+      </a>
+      <div class="desc">The Enchanting</div>
+    </div>
+  </div>
+
+  <section id="ai disclaimer"><b>AI Disclaimer</b></section>
+  <div class="mycontainer">
+    <p>AI was used in this project to help with the formatting. For example, I learned how to change the color of the creative writing borders with the hover effect using AI. I also used AI to make this website mobile friendly.</p>
+  </div>
+
+  <footer><i>Website designed by Mia Schmitt &copy; 2025</i></footer>
+</body>
+
+</html>
