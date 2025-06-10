@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        body {
+            background-color: rgb(166, 169, 184);
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 130px 20px 10px;
+        }
+
+        header, footer {
+            background-color: #00265b;
+            color: #c6c6c6;
+            text-align: center;
+            padding: 5px 0;
+            width: 100%;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header {
+            top: 0;
+            position: fixed;
+        }
+
+        footer {
+            bottom: 0;
+            color: #5e6a9c;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #c6c6c6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #041b33;
+            color: #fff;
+
+        }
+
+        p {
+            color: rgb(34, 34, 174);
+            text-align: center;
+            font-family: trebuchet;
+            font-size: large;
+            font-style: bold;
+        }
+
+        .mycontainer, section {
+            width: 60%;
+            margin: 20px auto;
+            padding: 15px;
+            border: 5px solid rgb(24, 104, 144);
+            background-color: #122c89;
+            border-radius: 25px;
+            color: black;
+        }
+
+        section {
+            background-color: rgb(54, 28, 146);
+            border-color: rgb(9, 23, 58);
+            font-family: 'Times New Roman', Times, serif;
+            color: #9ebcef;
+            font-size: x-large;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .faq-section {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .faq-question {
+            background-color: #2b087eb1;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: '▼'; /* Unicode character for down arrow */
+            position: absolute;
+            right: 10px;
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active::after {
+            transform: rotate(180deg); /* Rotate arrow when active */
+        }
+
+        .faq-question:hover {
+            background-color: #725cb5;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 16px;
+            background-color: #5d779e;
+            border: 1px solid #000475;
+            margin-top: 5px;
+            border-radius: 8px;
+            transition: max-height 0.5s ease, padding 0.5s ease;
+            display: flex;
+            align-items: center;
+            margin: 10px 0; /* Increase margin */
+        }
+
+        .faq-answer img {
+            max-width: 100px;
+            margin-right: 16px;
+            border-radius: 150px;
+        }
+
+        .faq-question.active + .faq-answer {
+            max-height: 200px; /* Adjust based on content */
+            padding: 16px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 120px;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .faq-question {
+                font-size: 14px;
+                padding: 12px;
+            }
+
+            .faq-answer {
+                font-size: 14px;
+                padding: 12px;
+                flex-direction: column;
+                align-items: flex-start;
+               
+
+            .faq-answer img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <section> My Work Experience</section>
+
+    <div class="container">
+        <div class="faq-section">
+            <button class="faq-question">Which Municipality Has the Most Lead Water Service Lines?</button>
+            <div class="faq-answer">
+                <img src="headshot1.jpg" width="100" alt="My Headshot">
+                <p>Sept. 2023 - present</p>
+                <p>I work for the Student Publishing Company as an advertiser for The Daily Northwestern newspaper. I have solicited $4200 in ads so far. I also create campaign invoices, put together tear sheets, and help out with the SPC Syllabus and production logistics. I have been entrusted with confidential information.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <button class="faq-question">Mariano's Smoothie-Maker</button>
+            <div class="faq-answer">
+                <img src="headshot1.jpg" width="100" alt="My Headshot">
+                <p> July 2024 - present</p>
+                <p>I single-handedly run the smoothie stand in Mariano’s. During my shifts I prep all ingredients, cash out customers, and make all the smoothies. So far I have received two raises.
+                </p>
+            </div>
+        </div>
+        
+        <div class="faq-section">
+            <button class="faq-question">Mochinut Doughnut Fryer and Cashier</button>
+            <div class="faq-answer">
+                <img src="headshot1.jpg" width="100" alt="My Headshot">
+                <p>May 2023 - current</p>
+                <p>I prepped, fried, and decorated doughnuts and corndogs, made drinks, took and prepared the customers’ orders, and did all the cleaning required to close the restaurant at the end of the night. I also was responsible for greeting customers and helping them complete their orders. I frequently led the night shifts.
+                </p>
+            </div>
+        </div>
+        
+        <div class="faq-section">
+            <button class="faq-question">Lou Malnati's Cashier and Pizza Runner</button>
+            <div class="faq-answer">
+                <img src="headshot1.jpg" width="100" alt="My Headshot">
+                <p> Dec. 2022 - Sept. 2023</p>
+                <p>I answered and processed phone orders, ran orders, cashed out customers, and assembled salads and pizzas. Due to my accuracy and excellent customer service, I received two raises during this job.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <button class="faq-question">McDonald's Cashier</button>
+            <div class="faq-answer">
+                <img src="headshot1.jpg" width="100" alt="My Headshot">
+                <p> June 2021 - Jan. 2023</p>
+                <p>I processed orders, cashed out customers, and ran orders. I prepared all food and drinks in a fast-paced environment. I frequently handled customer complaints, cleaned, and trained my coworkers. During this job I received two raises.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(function(question) {
+                question.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    var answer = this.nextElementSibling;
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        answer.style.padding = '0 16px';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        answer.style.padding = '16px';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
